@@ -118,7 +118,7 @@
             "zh": "脑细胞类型与基因表达的交互式浏览器。",
             "en": "An interactive browser for brain cell types and gene expression."
           },
-          "url": "https://www.braincelldata.org/",
+          "url": "https://braincelldata.org/resource",
           "type": "Cell atlas",
           "tags": [
             "Brain",
@@ -863,7 +863,7 @@
             "zh": "Allen AI 的科研文献检索与学术问答平台。",
             "en": "An Allen AI platform for scientific literature search and academic question answering."
           },
-          "url": "https://openscholar.allen.ai/",
+          "url": "https://openscilm.allen.ai/",
           "type": "AI for Science",
           "tags": [
             "Literature",
