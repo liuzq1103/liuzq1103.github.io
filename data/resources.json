@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "last_reviewed": "2026-11-28",
+  "categories": [
+    {
+      "id": "brain-atlases",
+      "index": "01",
+      "title": {
+        "zh": "脑图谱与神经解剖",
+        "en": "Brain atlases & neuroanatomy"
+      },
+      "description": {
+        "zh": "脑区结构、细胞定位、标准图谱与跨物种神经解剖资源。",
+        "en": "Brain structures, cell localization, reference atlases, and comparative neuroanatomy."
+      },
+      "items": []
+    },
+    {
+      "id": "single-cell",
+      "index": "02",
+      "title": {
+        "zh": "单细胞与空间组学",
+        "en": "Single-cell & spatial omics"
+      },
+      "description": {
+        "zh": "单细胞、单核、空间转录组及多组学数据资源。",
+        "en": "Single-cell, single-nucleus, spatial transcriptomics, and multi-omics resources."
+      },
+      "items": []
+    },
+    {
+      "id": "genomics",
+      "index": "03",
+      "title": {
+        "zh": "转录组与基因组",
+        "en": "Transcriptomics & genomics"
+      },
+      "description": {
+        "zh": "基因表达、可变剪接、基因组注释与分子功能数据库。",
+        "en": "Gene expression, alternative splicing, genome annotation, and molecular function databases."
+      },
+      "items": []
+    },
+    {
+      "id": "disease-data",
+      "index": "04",
+      "title": {
+        "zh": "疾病队列与临床数据",
+        "en": "Disease cohorts & clinical data"
+      },
+      "description": {
+        "zh": "阿尔茨海默病、神经退行性疾病及相关人群和动物模型数据。",
+        "en": "Human cohorts and model datasets for Alzheimer's disease and related neurodegenerative disorders."
+      },
+      "items": []
+    },
+    {
+      "id": "tools-workflows",
+      "index": "05",
+      "title": {
+        "zh": "分析工具与科研工作流",
+        "en": "Analysis tools & research workflows"
+      },
+      "description": {
+        "zh": "数据分析、可视化、文献检索与可重复科研工作流工具。",
+        "en": "Tools for data analysis, visualization, literature discovery, and reproducible research workflows."
+      },
+      "items": []
+    }
+  ]
+}
