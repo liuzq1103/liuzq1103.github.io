@@ -1,6 +1,10 @@
 {
   "schema_version": 1,
   "last_reviewed": "2026-11-28",
+  "curation_note": {
+    "zh": "精选自个人科研收藏，优先保留官方数据库、公开数据集、成熟分析工具与科研绘图资源。链接指向公开入口；数据可用性、访问权限和版本以各站点为准。",
+    "en": "Curated from personal research bookmarks, prioritizing official databases, public datasets, established analysis tools, and scientific-figure resources. Links point to public entry points; data availability, access, and versions are determined by each provider."
+  },
   "categories": [
     {
       "id": "brain-atlases",
@@ -10,10 +14,147 @@
         "en": "Brain atlases & neuroanatomy"
       },
       "description": {
-        "zh": "脑区结构、细胞定位、标准图谱与跨物种神经解剖资源。",
-        "en": "Brain structures, cell localization, reference atlases, and comparative neuroanatomy."
+        "zh": "脑区结构、细胞定位、空间图谱与神经连接资源。",
+        "en": "Reference atlases for brain anatomy, cell localization, spatial organization, and neural connectivity."
       },
-      "items": []
+      "items": [
+        {
+          "title": "Allen Brain Map",
+          "description": {
+            "zh": "Allen Institute 的脑科学资源门户，整合脑区解剖、基因表达、细胞类型与连接组资源。",
+            "en": "An Allen Institute portal integrating brain anatomy, gene expression, cell types, and connectivity resources."
+          },
+          "url": "https://portal.brain-map.org/",
+          "type": "Brain atlas",
+          "tags": [
+            "Mouse",
+            "Human",
+            "Connectivity"
+          ]
+        },
+        {
+          "title": "SEA-AD",
+          "description": {
+            "zh": "Seattle Alzheimer's Disease 项目的人脑细胞图谱与病理资源入口。",
+            "en": "A human brain cell atlas and pathology resource from the Seattle Alzheimer's Disease project."
+          },
+          "url": "https://portal.brain-map.org/explore/seattle-alzheimers-disease",
+          "type": "Disease atlas",
+          "tags": [
+            "Alzheimer's",
+            "Human brain"
+          ]
+        },
+        {
+          "title": "PsychENCODE · brainSCOPE",
+          "description": {
+            "zh": "PsychENCODE 相关的人脑多组学与调控资源浏览入口。",
+            "en": "A browser for PsychENCODE-related human-brain multi-omics and regulatory resources."
+          },
+          "url": "https://brainscope.psychencode.org/",
+          "type": "Multi-omics atlas",
+          "tags": [
+            "Human brain",
+            "Multi-omics",
+            "Regulation"
+          ]
+        },
+        {
+          "title": "Brain Spatial Atlas",
+          "description": {
+            "zh": "面向脑组织空间转录组数据的交互式图谱浏览入口。",
+            "en": "An interactive atlas for exploring spatial transcriptomics in brain tissue."
+          },
+          "url": "https://www.spatial-atlas.net/Brain/spatial.html",
+          "type": "Spatial atlas",
+          "tags": [
+            "Brain",
+            "Spatial"
+          ]
+        },
+        {
+          "title": "Macaque Brain Atlas",
+          "description": {
+            "zh": "猕猴脑空间细胞图谱与脑区信息浏览资源。",
+            "en": "Spatial cellular atlas and neuroanatomical resources for the macaque brain."
+          },
+          "url": "https://macaque.digital-brain.cn/",
+          "type": "Comparative atlas",
+          "tags": [
+            "Macaque",
+            "Comparative"
+          ]
+        },
+        {
+          "title": "STAM",
+          "description": {
+            "zh": "脑空间转录组与多模态图谱浏览平台。",
+            "en": "A platform for exploring brain spatial transcriptomics and multimodal atlases."
+          },
+          "url": "https://atlas.brainsmatics.cn/STAM/?lang=zh_cn",
+          "type": "Spatial atlas",
+          "tags": [
+            "Brain",
+            "Spatial",
+            "Multimodal"
+          ]
+        },
+        {
+          "title": "NeMO Analytics",
+          "description": {
+            "zh": "BRAIN Initiative 神经科学多组学数据的交互式分析入口。",
+            "en": "An interactive analysis portal for BRAIN Initiative neuroscience multi-omics data."
+          },
+          "url": "https://nemoanalytics.org/index.html",
+          "type": "Data portal",
+          "tags": [
+            "BRAIN Initiative",
+            "Multi-omics"
+          ]
+        },
+        {
+          "title": "BrainCellData Viewer",
+          "description": {
+            "zh": "脑细胞类型与基因表达的交互式浏览器。",
+            "en": "An interactive browser for brain cell types and gene expression."
+          },
+          "url": "https://braincelldata.org/resource",
+          "type": "Cell atlas",
+          "tags": [
+            "Brain",
+            "Cell types",
+            "Expression"
+          ]
+        },
+        {
+          "title": "Human Brain Transcriptome",
+          "description": {
+            "zh": "覆盖人脑发育与成年阶段的时空转录组资源。",
+            "en": "Spatiotemporal transcriptomic resources spanning human brain development and adulthood."
+          },
+          "url": "https://hbatlas.org/",
+          "type": "Transcriptome atlas",
+          "tags": [
+            "Human",
+            "Development",
+            "Transcriptomics"
+          ]
+        },
+        {
+          "title": "Allen Mouse Connectivity · 3D Viewer",
+          "description": {
+            "zh": "Allen 小鼠连接组项目的三维脑区与神经连接浏览器。",
+            "en": "A 3D browser for brain regions and neural connectivity from the Allen Mouse Connectivity project."
+          },
+          "url": "https://connectivity.brain-map.org/3d-viewer?v=1",
+          "type": "3D atlas",
+          "tags": [
+            "Mouse",
+            "3D",
+            "Connectivity"
+          ]
+        }
+      ]
     },
     {
       "id": "single-cell",
@@ -23,49 +164,753 @@
         "en": "Single-cell & spatial omics"
       },
       "description": {
-        "zh": "单细胞、单核、空间转录组及多组学数据资源。",
-        "en": "Single-cell, single-nucleus, spatial transcriptomics, and multi-omics resources."
+        "zh": "单细胞、单核、空间转录组及细胞类型注释与浏览平台。",
+        "en": "Portals and tools for single-cell, single-nucleus, and spatial transcriptomics, including cell-type annotation."
       },
-      "items": []
+      "items": [
+        {
+          "title": "Broad Single Cell Portal",
+          "description": {
+            "zh": "Broad Institute 的单细胞研究数据集、表达分析与可视化门户。",
+            "en": "A Broad Institute portal for single-cell studies, datasets, expression analysis, and visualization."
+          },
+          "url": "https://singlecell.broadinstitute.org/single_cell",
+          "type": "Data portal",
+          "tags": [
+            "Single-cell",
+            "Datasets"
+          ]
+        },
+        {
+          "title": "Azimuth",
+          "description": {
+            "zh": "基于参考图谱的单细胞数据映射与细胞类型注释工具。",
+            "en": "Reference-based mapping and cell-type annotation for single-cell datasets."
+          },
+          "url": "https://azimuth.hubmapconsortium.org/",
+          "type": "Analysis tool",
+          "tags": [
+            "Reference mapping",
+            "Cell annotation"
+          ]
+        },
+        {
+          "title": "STOMICS DataBase",
+          "description": {
+            "zh": "国家基因库时空组学数据库，汇集空间组学数据与浏览工具。",
+            "en": "A CNGB resource for spatial omics datasets and exploration tools."
+          },
+          "url": "https://db.cngb.org/stomics/",
+          "type": "Spatial omics",
+          "tags": [
+            "Spatial",
+            "CNGB"
+          ]
+        },
+        {
+          "title": "UCSC Cell Browser",
+          "description": {
+            "zh": "浏览单细胞转录组数据集与细胞群表达模式。",
+            "en": "Browse single-cell transcriptomic datasets and cell-population expression patterns."
+          },
+          "url": "https://cells.ucsc.edu/?bp=brain",
+          "type": "Cell browser",
+          "tags": [
+            "Single-cell",
+            "Expression"
+          ]
+        },
+        {
+          "title": "scMethBank",
+          "description": {
+            "zh": "单细胞 DNA 甲基化数据资源与浏览入口。",
+            "en": "A database and browser for single-cell DNA methylation data."
+          },
+          "url": "https://ngdc.cncb.ac.cn/methbank/scm/index",
+          "type": "Epigenomics database",
+          "tags": [
+            "Single-cell",
+            "Methylation"
+          ]
+        },
+        {
+          "title": "Human Microglia Single-cell Expression",
+          "description": {
+            "zh": "Olah 等人 2020 年人类小胶质细胞单细胞表达数据浏览器。",
+            "en": "A browser for human microglia single-cell expression data (Olah et al., 2020)."
+          },
+          "url": "https://vmenon.shinyapps.io/microglia/",
+          "type": "Cell-type dataset",
+          "tags": [
+            "Microglia",
+            "Human",
+            "scRNA-seq"
+          ]
+        },
+        {
+          "title": "Human Spinal Cord snRNA-seq Viewer",
+          "description": {
+            "zh": "人类脊髓单核 RNA 测序数据的交互式浏览器。",
+            "en": "An interactive viewer for human spinal cord single-nucleus RNA-seq data."
+          },
+          "url": "https://vmenon.shinyapps.io/humanspinalcord/",
+          "type": "Cell atlas",
+          "tags": [
+            "Spinal cord",
+            "snRNA-seq"
+          ]
+        },
+        {
+          "title": "AD Neocortical Layer 4 Neurons · CELLxGENE",
+          "description": {
+            "zh": "CELLxGENE 上聚焦阿尔茨海默病新皮层第 4 层神经元分子特征的数据集合。",
+            "en": "A CELLxGENE collection focused on molecular signatures in neocortical layer 4 neurons in Alzheimer's disease."
+          },
+          "url": "https://cellxgene.cziscience.com/collections/0d35c0fd-ef0b-4b70-bce6-645a4660e5fa",
+          "type": "Disease dataset",
+          "tags": [
+            "Alzheimer's",
+            "Neurons",
+            "CELLxGENE"
+          ]
+        },
+        {
+          "title": "Orthologous Gene Expression Viewer",
+          "description": {
+            "zh": "跨物种 bulk 与单细胞基因表达比较浏览工具。",
+            "en": "A viewer for comparing bulk and single-cell gene expression across orthologous genes."
+          },
+          "url": "https://amitlab.shinyapps.io/Orthologous_viewer/",
+          "type": "Expression browser",
+          "tags": [
+            "Cross-species",
+            "Gene expression"
+          ]
+        }
+      ]
     },
     {
       "id": "genomics",
       "index": "03",
       "title": {
-        "zh": "转录组与基因组",
+        "zh": "转录组与基因组数据库",
         "en": "Transcriptomics & genomics"
       },
       "description": {
-        "zh": "基因表达、可变剪接、基因组注释与分子功能数据库。",
-        "en": "Gene expression, alternative splicing, genome annotation, and molecular function databases."
+        "zh": "基因表达、遗传变异、功能注释、通路与蛋白质信息数据库。",
+        "en": "Databases for gene expression, genetic variation, functional annotation, pathways, and protein information."
       },
-      "items": []
+      "items": [
+        {
+          "title": "The Human Protein Atlas",
+          "description": {
+            "zh": "组织、细胞与亚细胞层面的蛋白表达与定位资源。",
+            "en": "Protein expression and localization across tissues, cells, and subcellular compartments."
+          },
+          "url": "https://www.proteinatlas.org/",
+          "type": "Protein database",
+          "tags": [
+            "Protein expression",
+            "Human"
+          ]
+        },
+        {
+          "title": "EMBL-EBI Expression Atlas",
+          "description": {
+            "zh": "跨物种基因表达数据集与差异表达结果检索入口。",
+            "en": "An EMBL-EBI portal for cross-species gene-expression datasets and differential expression results."
+          },
+          "url": "https://www.ebi.ac.uk/gxa/home",
+          "type": "Expression database",
+          "tags": [
+            "Gene expression",
+            "EMBL-EBI"
+          ]
+        },
+        {
+          "title": "GWAS Catalog",
+          "description": {
+            "zh": "NHGRI-EBI 整理的全基因组关联研究及变异-性状关联目录。",
+            "en": "A curated catalogue of genome-wide association studies and variant-trait associations."
+          },
+          "url": "https://www.ebi.ac.uk/gwas/",
+          "type": "Genetics database",
+          "tags": [
+            "GWAS",
+            "Genetics"
+          ]
+        },
+        {
+          "title": "Gene Ontology · Downloads",
+          "description": {
+            "zh": "Gene Ontology 官方注释与数据下载入口。",
+            "en": "Official Gene Ontology annotations and data downloads."
+          },
+          "url": "https://current.geneontology.org/products/pages/downloads.html",
+          "type": "Functional annotation",
+          "tags": [
+            "Gene Ontology",
+            "Downloads"
+          ]
+        },
+        {
+          "title": "QuickGO",
+          "description": {
+            "zh": "检索 GO 术语、基因注释及证据代码。",
+            "en": "Search Gene Ontology terms, gene annotations, and evidence codes."
+          },
+          "url": "https://www.ebi.ac.uk/QuickGO/search/neurogenesis",
+          "type": "Annotation browser",
+          "tags": [
+            "GO",
+            "Annotation"
+          ]
+        },
+        {
+          "title": "InterPro",
+          "description": {
+            "zh": "整合蛋白家族、结构域与功能位点的注释数据库。",
+            "en": "An integrated resource for protein families, domains, and functional sites."
+          },
+          "url": "https://www.ebi.ac.uk/interpro/",
+          "type": "Protein database",
+          "tags": [
+            "Protein domains",
+            "Annotation"
+          ]
+        },
+        {
+          "title": "KEGG PATHWAY",
+          "description": {
+            "zh": "代谢、信号转导与疾病相关通路数据库。",
+            "en": "A reference database for metabolic, signaling, and disease-associated pathways."
+          },
+          "url": "https://www.genome.jp/kegg/pathway.html",
+          "type": "Pathway database",
+          "tags": [
+            "Pathways",
+            "Functional analysis"
+          ]
+        },
+        {
+          "title": "SynGO",
+          "description": {
+            "zh": "突触相关基因的专家审定本体与功能注释资源。",
+            "en": "An expert-curated ontology and functional annotation resource for synaptic genes."
+          },
+          "url": "https://syngoportal.org/",
+          "type": "Functional annotation",
+          "tags": [
+            "Synapse",
+            "Gene ontology"
+          ]
+        },
+        {
+          "title": "PhosphoSitePlus",
+          "description": {
+            "zh": "蛋白质磷酸化等翻译后修饰位点与文献证据数据库。",
+            "en": "A database of protein post-translational modification sites and supporting literature."
+          },
+          "url": "https://www.phosphosite.org/homeAction",
+          "type": "Protein modification",
+          "tags": [
+            "PTM",
+            "Phosphorylation"
+          ]
+        },
+        {
+          "title": "RCSB Protein Data Bank",
+          "description": {
+            "zh": "蛋白质及核酸大分子三维结构数据的全球档案。",
+            "en": "A global archive of 3D structures of proteins and nucleic acids."
+          },
+          "url": "https://www.rcsb.org/",
+          "type": "Structure database",
+          "tags": [
+            "Protein structure",
+            "PDB"
+          ]
+        },
+        {
+          "title": "JASPAR",
+          "description": {
+            "zh": "开放的转录因子 DNA 结合 motif 与 profile 数据库。",
+            "en": "An open database of transcription factor DNA-binding profiles."
+          },
+          "url": "https://jaspar.genereg.net/",
+          "type": "Regulatory database",
+          "tags": [
+            "Transcription factors",
+            "Motifs"
+          ]
+        },
+        {
+          "title": "Alliance of Genome Resources",
+          "description": {
+            "zh": "整合模式生物基因、遗传学与功能信息的跨物种资源。",
+            "en": "An integrated cross-species resource for model-organism genes, genetics, and function."
+          },
+          "url": "https://www.alliancegenome.org/downloads#orthology",
+          "type": "Genomics database",
+          "tags": [
+            "Model organisms",
+            "Genetics"
+          ]
+        },
+        {
+          "title": "ENA Browser",
+          "description": {
+            "zh": "欧洲核苷酸档案的序列与测序数据检索入口。",
+            "en": "Search and access sequence and sequencing data from the European Nucleotide Archive."
+          },
+          "url": "https://www.ebi.ac.uk/ena/browser/home",
+          "type": "Sequence archive",
+          "tags": [
+            "Sequencing",
+            "Data archive"
+          ]
+        }
+      ]
     },
     {
       "id": "disease-data",
       "index": "04",
       "title": {
-        "zh": "疾病队列与临床数据",
-        "en": "Disease cohorts & clinical data"
+        "zh": "神经退行性疾病与队列数据",
+        "en": "Neurodegeneration & disease datasets"
       },
       "description": {
-        "zh": "阿尔茨海默病、神经退行性疾病及相关人群和动物模型数据。",
-        "en": "Human cohorts and model datasets for Alzheimer's disease and related neurodegenerative disorders."
+        "zh": "阿尔茨海默病、衰老、胶质细胞及相关人群和动物模型数据。",
+        "en": "Datasets and portals covering Alzheimer's disease, ageing, glial biology, human cohorts, and model systems."
       },
-      "items": []
+      "items": [
+        {
+          "title": "AlzData",
+          "description": {
+            "zh": "阿尔茨海默病多组学数据整合与单细胞表达浏览入口。",
+            "en": "An integrated Alzheimer's disease multi-omics resource with single-cell expression browsing."
+          },
+          "url": "https://www.alzdata.org/single_RNAseq1.php",
+          "type": "Disease database",
+          "tags": [
+            "Alzheimer's",
+            "Multi-omics"
+          ]
+        },
+        {
+          "title": "AD Multi-Region Repository · MIT",
+          "description": {
+            "zh": "MIT Kellis Lab 的阿尔茨海默病多脑区数据仓库。",
+            "en": "An MIT Kellis Lab repository of multi-region Alzheimer's disease brain data."
+          },
+          "url": "https://compbio.mit.edu/ad_multiregion/",
+          "type": "Cohort dataset",
+          "tags": [
+            "Alzheimer's",
+            "Multi-region",
+            "Human"
+          ]
+        },
+        {
+          "title": "AD / Aging Brain Atlas · MIT",
+          "description": {
+            "zh": "人类衰老与阿尔茨海默病前额叶单细胞转录组图谱。",
+            "en": "A single-cell transcriptomic atlas of the aged human prefrontal cortex and Alzheimer's disease."
+          },
+          "url": "https://compbio.mit.edu/ad_aging_brain/",
+          "type": "Disease atlas",
+          "tags": [
+            "Alzheimer's",
+            "Ageing",
+            "Prefrontal cortex"
+          ]
+        },
+        {
+          "title": "AD Progression Atlas",
+          "description": {
+            "zh": "用于探索阿尔茨海默病病理进展相关细胞状态与数据的图谱。",
+            "en": "An atlas for exploring cell states and datasets associated with Alzheimer's disease progression."
+          },
+          "url": "https://ad-progression-atlas.partners.org/?page=sample-level",
+          "type": "Disease atlas",
+          "tags": [
+            "Alzheimer's",
+            "Progression"
+          ]
+        },
+        {
+          "title": "scREAD",
+          "description": {
+            "zh": "面向阿尔茨海默病的单细胞与单核 RNA-seq 数据资源。",
+            "en": "A single-cell and single-nucleus RNA-seq resource focused on Alzheimer's disease."
+          },
+          "url": "https://bmbls.bmi.osumc.edu/scread/",
+          "type": "Single-cell database",
+          "tags": [
+            "Alzheimer's",
+            "scRNA-seq",
+            "snRNA-seq"
+          ]
+        },
+        {
+          "title": "ROSMAP Microglia scRNA-seq Explorer",
+          "description": {
+            "zh": "ROSMAP 队列小胶质细胞单细胞数据浏览器。",
+            "en": "An explorer for microglia single-cell data from the ROSMAP cohort."
+          },
+          "url": "https://andyptsai.shinyapps.io/ROSMAP_micorglia_scRNAseq_explorer/",
+          "type": "Cohort browser",
+          "tags": [
+            "ROSMAP",
+            "Microglia"
+          ]
+        },
+        {
+          "title": "ROSMAP snRNA-seq Viewer",
+          "description": {
+            "zh": "ROSMAP 相关人脑单核转录组数据浏览入口。",
+            "en": "A viewer for ROSMAP-related human brain single-nucleus transcriptomic data."
+          },
+          "url": "https://vmenon.shinyapps.io/rosmap_snrnaseq24/",
+          "type": "Cohort browser",
+          "tags": [
+            "ROSMAP",
+            "snRNA-seq"
+          ]
+        },
+        {
+          "title": "CSF Aging & Cognitive Impairment",
+          "description": {
+            "zh": "健康衰老与认知障碍相关脑脊液数据的交互式浏览应用。",
+            "en": "An interactive resource for cerebrospinal-fluid data across healthy ageing and cognitive impairment."
+          },
+          "url": "https://gatelabnu.shinyapps.io/csf_aging/",
+          "type": "Clinical data",
+          "tags": [
+            "CSF",
+            "Ageing",
+            "Cognition"
+          ]
+        },
+        {
+          "title": "AD Proteome / Phosphoproteome Profiles",
+          "description": {
+            "zh": "阿尔茨海默病蛋白质组与磷酸化蛋白质组数据浏览工具。",
+            "en": "A viewer for proteomic and phosphoproteomic profiles in Alzheimer's disease."
+          },
+          "url": "https://penglab.shinyapps.io/ADprofile/",
+          "type": "Proteomics dataset",
+          "tags": [
+            "Alzheimer's",
+            "Proteomics"
+          ]
+        },
+        {
+          "title": "CRISPRbrain",
+          "description": {
+            "zh": "人类神经元与胶质细胞 CRISPR 功能筛选数据浏览入口。",
+            "en": "A portal for CRISPR functional screens in human neurons and glial cells."
+          },
+          "url": "https://www.crisprbrain.org/screens/",
+          "type": "Functional screening",
+          "tags": [
+            "CRISPR",
+            "Neurons",
+            "Glia"
+          ]
+        },
+        {
+          "title": "3xTg Alzheimer's Model · ALZFORUM",
+          "description": {
+            "zh": "3xTg 阿尔茨海默病小鼠模型的背景与研究资源。",
+            "en": "A research-model profile for the 3xTg Alzheimer's disease mouse."
+          },
+          "url": "https://www.alzforum.org/research-models/3xtg",
+          "type": "Animal model",
+          "tags": [
+            "Alzheimer's",
+            "Mouse model"
+          ]
+        },
+        {
+          "title": "Wild-derived APP/PS1 Microglia",
+          "description": {
+            "zh": "野生来源 APP/PS1 小鼠品系中小胶质细胞的单细胞数据浏览资源。",
+            "en": "A single-cell resource for microglia from wild-derived APP/PS1 mouse strains."
+          },
+          "url": "https://wild_microglia_scrna-seq.jax.org/",
+          "type": "Animal-model dataset",
+          "tags": [
+            "APP/PS1",
+            "Microglia",
+            "Mouse"
+          ]
+        }
+      ]
     },
     {
       "id": "tools-workflows",
       "index": "05",
       "title": {
-        "zh": "分析工具与科研工作流",
-        "en": "Analysis tools & research workflows"
+        "zh": "分析工具、科研绘图与 AI",
+        "en": "Analysis, visualization & AI for Science"
       },
       "description": {
-        "zh": "数据分析、可视化、文献检索与可重复科研工作流工具。",
-        "en": "Tools for data analysis, visualization, literature discovery, and reproducible research workflows."
+        "zh": "可重复分析流程、统计与可视化工具、科研插画素材、实验资源及 AI for Science 平台。",
+        "en": "Reproducible analysis workflows, visualization tools, scientific illustration assets, experimental resources, and AI for Science platforms."
       },
-      "items": []
+      "items": [
+        {
+          "title": "Bioconductor",
+          "description": {
+            "zh": "面向高通量生物数据分析的开源 R 软件与注释包生态。",
+            "en": "An open-source R ecosystem for high-throughput biological data analysis and annotation."
+          },
+          "url": "https://www.bioconductor.org/",
+          "type": "R ecosystem",
+          "tags": [
+            "R",
+            "Bioinformatics"
+          ]
+        },
+        {
+          "title": "Orchestrating Single-Cell Analysis with Bioconductor",
+          "description": {
+            "zh": "Bioconductor 官方单细胞分析电子书，覆盖常见分析流程与方法。",
+            "en": "The Bioconductor book for single-cell analysis workflows and methods."
+          },
+          "url": "https://bioconductor.org/books/release/OSCA/index.html",
+          "type": "Reference guide",
+          "tags": [
+            "Single-cell",
+            "Bioconductor"
+          ]
+        },
+        {
+          "title": "Single-cell Best Practices",
+          "description": {
+            "zh": "单细胞数据分析的开放指南，整理实验设计、处理与分析实践。",
+            "en": "An open guide to experimental design, processing, and analysis practices for single-cell data."
+          },
+          "url": "https://www.sc-best-practices.org/preamble.html",
+          "type": "Reference guide",
+          "tags": [
+            "Single-cell",
+            "Best practices"
+          ]
+        },
+        {
+          "title": "Seurat · Guided Clustering Tutorial",
+          "description": {
+            "zh": "Seurat 官方 PBMC 数据聚类分析教程。",
+            "en": "The official Seurat guided clustering tutorial using PBMC data."
+          },
+          "url": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html",
+          "type": "Analysis tutorial",
+          "tags": [
+            "Seurat",
+            "scRNA-seq"
+          ]
+        },
+        {
+          "title": "DEXSeq · Usage Analysis Vignette",
+          "description": {
+            "zh": "DEXSeq 官方教程，用于 RNA-seq 数据中的差异外显子使用分析。",
+            "en": "The DEXSeq vignette for differential exon-usage analysis in RNA-seq data."
+          },
+          "url": "https://bioconductor.org/packages/release/bioc/vignettes/DEXSeq/inst/doc/DEXSeq.html",
+          "type": "Analysis tutorial",
+          "tags": [
+            "RNA-seq",
+            "Alternative splicing"
+          ]
+        },
+        {
+          "title": "MOFA2",
+          "description": {
+            "zh": "用于整合多组学数据并提取潜在因子的分析框架。",
+            "en": "A framework for integrating multi-omics data and identifying latent factors."
+          },
+          "url": "https://biofam.github.io/MOFA2/",
+          "type": "Multi-omics tool",
+          "tags": [
+            "Multi-omics",
+            "R"
+          ]
+        },
+        {
+          "title": "The R Graph Gallery",
+          "description": {
+            "zh": "R 与 ggplot2 数据可视化图表及代码范例库。",
+            "en": "A gallery of data-visualization examples and code in R and ggplot2."
+          },
+          "url": "https://www.r-graph-gallery.com/",
+          "type": "Visualization",
+          "tags": [
+            "R",
+            "ggplot2",
+            "Charts"
+          ]
+        },
+        {
+          "title": "Hiplot",
+          "description": {
+            "zh": "面向生物医学数据的在线可视化与分析平台。",
+            "en": "An online visualization and analysis platform for biomedical data."
+          },
+          "url": "https://hiplot.com.cn/?lang=zh_cn",
+          "type": "Visualization platform",
+          "tags": [
+            "Visualization",
+            "Bioinformatics"
+          ]
+        },
+        {
+          "title": "BioRender",
+          "description": {
+            "zh": "生命科学示意图与机制图绘制平台。",
+            "en": "A platform for creating life-science schematics and mechanism figures."
+          },
+          "url": "https://app.biorender.com/",
+          "type": "Scientific illustration",
+          "tags": [
+            "Figures",
+            "Illustration"
+          ]
+        },
+        {
+          "title": "Bioicons",
+          "description": {
+            "zh": "可用于科研图示的开源科学矢量图标库。",
+            "en": "An open library of scientific vector icons for research figures."
+          },
+          "url": "https://bioicons.com/",
+          "type": "Vector assets",
+          "tags": [
+            "SVG",
+            "Icons",
+            "Open source"
+          ]
+        },
+        {
+          "title": "NIAID BioArt",
+          "description": {
+            "zh": "美国 NIAID 提供的生物医学插画与科研视觉素材库。",
+            "en": "A collection of biomedical illustrations and visual assets from NIAID."
+          },
+          "url": "https://bioart.niaid.nih.gov/discover",
+          "type": "Scientific illustration",
+          "tags": [
+            "Illustration",
+            "Biomedical"
+          ]
+        },
+        {
+          "title": "Servier Medical ART",
+          "description": {
+            "zh": "提供医学与生物学主题插画素材的资源库。",
+            "en": "A library of medical and biological illustrations."
+          },
+          "url": "https://smart.servier.com/",
+          "type": "Scientific illustration",
+          "tags": [
+            "Illustration",
+            "Medical art"
+          ]
+        },
+        {
+          "title": "Addgene Vector Database",
+          "description": {
+            "zh": "质粒载体信息与序列资源检索入口。",
+            "en": "A searchable resource for plasmid vector information and sequences."
+          },
+          "url": "https://www.addgene.org/vector-database/",
+          "type": "Experimental resource",
+          "tags": [
+            "Plasmids",
+            "Vectors"
+          ]
+        },
+        {
+          "title": "PrimerBank",
+          "description": {
+            "zh": "用于检索 qPCR 引物的数据库。",
+            "en": "A database for searching quantitative PCR primers."
+          },
+          "url": "https://pga.mgh.harvard.edu/primerbank/",
+          "type": "Experimental resource",
+          "tags": [
+            "qPCR",
+            "Primers"
+          ]
+        },
+        {
+          "title": "CiteAb",
+          "description": {
+            "zh": "基于文献引用信息的生命科学抗体检索平台。",
+            "en": "A life-science antibody search platform using publication citation information."
+          },
+          "url": "https://www.citeab.com/",
+          "type": "Experimental resource",
+          "tags": [
+            "Antibodies",
+            "Reagents"
+          ]
+        },
+        {
+          "title": "OpenScholar",
+          "description": {
+            "zh": "Allen AI 的科研文献检索与学术问答平台。",
+            "en": "An Allen AI platform for scientific literature search and academic question answering."
+          },
+          "url": "https://openscilm.allen.ai/",
+          "type": "AI for Science",
+          "tags": [
+            "Literature",
+            "AI"
+          ]
+        },
+        {
+          "title": "Biomni",
+          "description": {
+            "zh": "Stanford 的生物医学 AI Agent 平台。",
+            "en": "A Stanford platform for biomedical AI agents."
+          },
+          "url": "https://app.biomni.stanford.edu/",
+          "type": "AI for Science",
+          "tags": [
+            "Biomedical AI",
+            "Agent"
+          ]
+        },
+        {
+          "title": "Paper2Agent",
+          "description": {
+            "zh": "围绕科研论文构建可交互研究工作流的工具。",
+            "en": "A tool for building interactive research workflows around scientific papers."
+          },
+          "url": "https://paper2agent.ai/live",
+          "type": "AI for Science",
+          "tags": [
+            "Papers",
+            "Agent"
+          ]
+        },
+        {
+          "title": "Prism · AI LaTeX Editor",
+          "description": {
+            "zh": "面向学术写作与 LaTeX 文档工作的 AI 编辑器。",
+            "en": "An AI editor for academic writing and LaTeX documents."
+          },
+          "url": "https://prism.openai.com/",
+          "type": "AI for research writing",
+          "tags": [
+            "LaTeX",
+            "Writing",
+            "AI"
+          ]
+        }
+      ]
     }
   ]
 }
