@@ -27,21 +27,29 @@
     <section class="page-hero section-shell">
       <p class="eyebrow">CURATED KNOWLEDGE PORTAL</p>
       <h1><span data-lang="zh">科研资源库</span><span data-lang="en">Research Resources</span></h1>
-      <p><span data-lang="zh">面向神经科学与计算生物学的数据库、脑图谱、公开数据集和分析工具索引。资源将按主题分类，并逐步补充官方入口与使用说明。</span><span data-lang="en">A curated index of databases, brain atlases, public datasets, and analysis tools for neuroscience and computational biology. Resources are organized by topic, with official links and notes added progressively.</span></p>
-      <div class="page-meta"><span id="resource-count">0 resources</span><span>5 categories</span><span><span data-lang="zh">持续整理中</span><span data-lang="en">Growing directory</span></span></div>
+      <p><span data-lang="zh">为神经科学与计算生物学整理的精选科研入口，覆盖脑图谱、单细胞组学、疾病数据、基因组数据库与科研工作流。</span><span data-lang="en">A curated research directory for neuroscience and computational biology, spanning brain atlases, single-cell omics, disease datasets, genomics, and research workflows.</span></p>
+      <div class="page-meta"><span id="resource-count">0 resources</span><span><span data-lang="zh">5 个主题集合</span><span data-lang="en">5 curated collections</span></span><span><span data-lang="zh">精选自个人科研收藏</span><span data-lang="en">Selected from research bookmarks</span></span></div>
     </section>
 
     <section class="content-shell resource-page-content">
       <div class="resource-intro">
         <div>
-          <h2><span data-lang="zh">按研究主题浏览</span><span data-lang="en">Browse by research area</span></h2>
-          <p><span data-lang="zh">参考 BrainInfo 等学术门户的组织方式，将分散的科研入口整理成可检索、可扩展的资源目录。</span><span data-lang="en">Inspired by academic portals such as BrainInfo, this directory brings scattered research entry points into one searchable, extensible index.</span></p>
+          <h2><span data-lang="zh">精选科研入口</span><span data-lang="en">Curated research resources</span></h2>
+          <p><span data-lang="zh">优先展示官方数据库、公开数据集和成熟工具；按研究用途组织，而不是照搬浏览器收藏夹。</span><span data-lang="en">Prioritizing official databases, public datasets, and established tools—organized by research use rather than browser-folder structure.</span></p>
         </div>
         <label class="search-box resource-search">
           <span class="search-icon">⌕</span>
           <input id="resource-search" type="search" placeholder="Search databases, datasets, atlases, or tools" aria-label="Search resources">
         </label>
       </div>
+
+      <nav class="resource-nav" aria-label="Resource categories">
+        <a href="#brain-atlases"><span class="resource-nav-number">01</span><span><strong><span data-lang="zh">脑图谱</span><span data-lang="en">Brain atlases</span></strong><small><span data-lang="zh">结构与连接</span><span data-lang="en">Anatomy & connectivity</span></small></span></a>
+        <a href="#single-cell"><span class="resource-nav-number">02</span><span><strong><span data-lang="zh">单细胞组学</span><span data-lang="en">Single-cell</span></strong><small><span data-lang="zh">细胞与空间图谱</span><span data-lang="en">Cell & spatial atlases</span></small></span></a>
+        <a href="#genomics"><span class="resource-nav-number">03</span><span><strong><span data-lang="zh">基因组数据库</span><span data-lang="en">Genomics</span></strong><small><span data-lang="zh">表达与功能注释</span><span data-lang="en">Expression & annotation</span></small></span></a>
+        <a href="#disease-data"><span class="resource-nav-number">04</span><span><strong><span data-lang="zh">疾病数据</span><span data-lang="en">Disease data</span></strong><small><span data-lang="zh">AD 与衰老研究</span><span data-lang="en">AD & ageing</span></small></span></a>
+        <a href="#tools-workflows"><span class="resource-nav-number">05</span><span><strong><span data-lang="zh">分析与 AI</span><span data-lang="en">Tools & AI</span></strong><small><span data-lang="zh">分析、绘图与工作流</span><span data-lang="en">Analysis, figures & workflows</span></small></span></a>
+      </nav>
 
       <div class="resource-directory" id="resource-directory" aria-live="polite">
         <div class="resource-loading"><span class="loading-dot"></span><span data-lang="zh">正在载入资源目录…</span><span data-lang="en">Loading resource directory…</span></div>
@@ -50,8 +58,8 @@
       <section class="resource-maintenance">
         <div class="resource-maintenance-icon">＋</div>
         <div>
-          <h2><span data-lang="zh">持续扩展</span><span data-lang="en">Built to grow</span></h2>
-          <p><span data-lang="zh">新增数据库时，只需向 <code>data/resources.json</code> 添加条目，不需要修改页面布局。优先收录官方数据库入口、稳定的数据集页面和有明确维护者的工具。</span><span data-lang="en">To add a database, append an entry to <code>data/resources.json</code>; no layout changes are needed. Prioritize official database portals, stable dataset records, and actively maintained tools.</span></p>
+          <h2><span data-lang="zh">精选原则</span><span data-lang="en">Curation notes</span></h2>
+          <p><span data-lang="zh">本目录精选自个人科研收藏，保留具有明确科研用途的公开资源。部分交互式数据浏览器可能由实验室或研究团队维护，访问状态与数据版本请以原站为准。新增资源可继续写入 <code>data/resources.json</code>。</span><span data-lang="en">This directory selects public resources with a clear research use from a larger personal bookmark collection. Some interactive browsers are maintained by individual labs or research teams; check the original site for current availability and data versions. Additions can be made in <code>data/resources.json</code>.</span></p>
         </div>
       </section>
     </section>
