@@ -4,20 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f8fa">
-  <meta name="description" content="Zhi-Qiang Liu — neuroscience, computational biology, and research software.">
-  <meta property="og:title" content="Zhi-Qiang Liu | Personal Website">
-  <meta property="og:description" content="Research, publications, and selected software projects.">
+  <meta name="description" content="Zhi-Qiang Liu — neuroscience, neurodegeneration, computational biology, and research resources.">
+  <meta property="og:title" content="Zhi-Qiang Liu | Academic Website">
+  <meta property="og:description" content="Research, publications, software projects, and curated neuroscience resources.">
   <title>刘志强 · Zhi-Qiang Liu</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="wordmark" href="#top" aria-label="Home">ZL<span>.</span></a>
+      <a class="wordmark" href="index.html" aria-label="Zhi-Qiang Liu homepage">ZL<span>.</span></a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="#about"><span data-lang="zh">关于</span><span data-lang="en">About</span></a>
+        <a class="active" href="index.html"><span data-lang="zh">主页</span><span data-lang="en">Home</span></a>
         <a href="#research"><span data-lang="zh">研究</span><span data-lang="en">Research</span></a>
-        <a href="#publications"><span data-lang="zh">论文</span><span data-lang="en">Publications</span></a>
+        <a href="publications.html"><span data-lang="zh">论文</span><span data-lang="en">Publications</span></a>
+        <a href="resources.html"><span data-lang="zh">资源</span><span data-lang="en">Resources</span></a>
         <a href="#projects"><span data-lang="zh">项目</span><span data-lang="en">Projects</span></a>
         <a class="nav-cv" href="cv.html">CV ↗</a>
         <button class="language-toggle" id="language-toggle" type="button">EN</button>
@@ -29,138 +30,183 @@
     <section class="hero section-shell" id="about">
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span data-lang="zh">神经科学 · 计算生物学 · 科研软件</span><span data-lang="en">NEUROSCIENCE · COMPUTATIONAL BIOLOGY · RESEARCH SOFTWARE</span></p>
+          <p class="eyebrow"><span data-lang="zh">个人学术主页 · 神经科学与计算生物学</span><span data-lang="en">PERSONAL ACADEMIC PORTAL · NEUROSCIENCE & COMPUTATIONAL BIOLOGY</span></p>
           <h1><span data-lang="zh">刘志强</span><span data-lang="en">Zhi-Qiang Liu</span></h1>
-          <p class="hero-role"><span data-lang="zh">神经科学博士研究生</span><span data-lang="en">Ph.D. Student in Neuroscience</span></p>
+          <p class="hero-role"><span data-lang="zh">神经科学 · 神经退行性疾病 · 计算生物学</span><span data-lang="en">Neuroscience · Neurodegeneration · Computational Biology</span></p>
           <p class="hero-intro">
-            <span data-lang="zh">关注阿尔茨海默病及相关神经退行性疾病中的细胞类型特异性脆弱性，结合转录组学分析与分子机制研究，探索神经元 DNA 损伤应答、NHEJ 修复、MEIS2 相关功能及异常细胞周期重进入。</span>
-            <span data-lang="en">I study cell-type-specific vulnerability in Alzheimer's disease and related neurodegenerative disorders. My interests span transcriptomic analysis, neuronal DNA-damage responses and NHEJ repair, MEIS2-associated functions, and aberrant cell-cycle re-entry.</span>
+            <span data-lang="zh">我的研究关注神经退行性疾病中的细胞类型特异性脆弱性与神经环路韧性，结合转录组学、分子神经科学和计算分析，探索神经元损伤应答、DNA 修复及细胞状态变化。</span>
+            <span data-lang="en">My research explores cell-type-specific vulnerability and circuit-level resilience in neurodegenerative disease. I combine transcriptomics, molecular neuroscience, and computational analysis to study neuronal injury responses, DNA repair, and cellular-state transitions.</span>
           </p>
+          <p class="hero-affiliation">Tongji Medical College · Huazhong University of Science and Technology</p>
           <div class="hero-actions">
-            <a class="button button-dark" href="cv.html"><span data-lang="zh">查看个人 CV</span><span data-lang="en">View CV</span><span aria-hidden="true">↗</span></a>
-            <a class="button button-quiet" href="#publications"><span data-lang="zh">精选论文</span><span data-lang="en">Selected publications</span></a>
+            <a class="button button-dark" href="publications.html"><span data-lang="zh">浏览论文</span><span data-lang="en">Explore publications</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="resources.html"><span data-lang="zh">科研资源库</span><span data-lang="en">Resource library</span></a>
           </div>
-          <p class="hero-meta"><span data-lang="zh">研究 · 分析 · 构建</span><span data-lang="en">Research · Analysis · Building</span></p>
+          <div class="profile-links">
+            <a href="https://orcid.org/0009-0008-9802-214X" target="_blank" rel="noopener noreferrer">ORCID <span>↗</span></a>
+            <a href="https://github.com/liuzq1103" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+            <a href="cv.html">Curriculum Vitae <span>↗</span></a>
+          </div>
         </div>
-        <figure class="portrait">
-          <img src="assets/people/liuzq.jpeg" alt="Zhi-Qiang Liu">
+        <figure class="hero-portrait">
+          <img src="assets/people/liuzq.jpeg" alt="Portrait of Zhi-Qiang Liu">
+          <figcaption><span data-lang="zh">刘志强 · Zhi-Qiang Liu</span><span data-lang="en">Zhi-Qiang Liu</span></figcaption>
         </figure>
       </div>
+    </section>
+
+    <section class="portal-shortcuts section-shell" aria-label="Explore the website">
+      <a href="#research"><span class="shortcut-index">01</span><span><strong><span data-lang="zh">研究方向</span><span data-lang="en">Research</span></strong><small><span data-lang="zh">科学问题与研究主题</span><span data-lang="en">Questions and themes</span></small></span><span class="shortcut-arrow">↗</span></a>
+      <a href="publications.html"><span class="shortcut-index">02</span><span><strong><span data-lang="zh">学术论文</span><span data-lang="en">Publications</span></strong><small><span data-lang="zh">同行评审研究成果</span><span data-lang="en">Peer-reviewed work</span></small></span><span class="shortcut-arrow">↗</span></a>
+      <a href="resources.html"><span class="shortcut-index">03</span><span><strong><span data-lang="zh">资源索引</span><span data-lang="en">Resources</span></strong><small><span data-lang="zh">数据库、图谱与工具</span><span data-lang="en">Databases, atlases & tools</span></small></span><span class="shortcut-arrow">↗</span></a>
+      <a href="cv.html"><span class="shortcut-index">04</span><span><strong>CV</strong><small><span data-lang="zh">个人学术履历</span><span data-lang="en">Academic curriculum vitae</span></small></span><span class="shortcut-arrow">↗</span></a>
     </section>
 
     <div class="content-shell">
       <section class="content-section" id="research">
         <div class="section-heading">
-          <span class="section-number">01</span>
+          <span class="section-number">01 / RESEARCH</span>
           <div>
-            <h2><span data-lang="zh">研究兴趣</span><span data-lang="en">Research interests</span></h2>
-            <p><span data-lang="zh">从细胞类型与分子机制理解神经退行性疾病。</span><span data-lang="en">Understanding neurodegeneration through cell identity and molecular mechanisms.</span></p>
+            <h2><span data-lang="zh">研究方向</span><span data-lang="en">Research interests</span></h2>
+            <p><span data-lang="zh">从细胞身份、分子机制与神经环路三个层面理解神经退行性疾病。</span><span data-lang="en">Understanding neurodegeneration through cell identity, molecular mechanisms, and neural circuits.</span></p>
           </div>
         </div>
-        <div class="research-list">
-          <article class="research-item">
-            <span class="item-number">01</span>
-            <div><h3><span data-lang="zh">神经元脆弱性与阿尔茨海默病</span><span data-lang="en">Neuronal vulnerability in Alzheimer's disease</span></h3>
-              <p><span data-lang="zh">解析不同神经元亚型对疾病病理的差异性响应。</span><span data-lang="en">Defining how distinct neuronal subtypes respond to disease-associated pathology.</span></p></div>
+        <div class="research-grid">
+          <article class="research-card">
+            <span class="card-index">01</span>
+            <h3><span data-lang="zh">神经元脆弱性与认知韧性</span><span data-lang="en">Neuronal vulnerability & cognitive resilience</span></h3>
+            <p><span data-lang="zh">解析 Tau 病理下特定神经元亚型的易损性，以及代偿性神经环路如何维持认知功能。</span><span data-lang="en">Defining neuronal subtype vulnerability under tau pathology and the compensatory circuits that preserve cognitive function.</span></p>
+            <div class="tag-row"><span>Alzheimer's disease</span><span>Tau</span><span>Neural circuits</span></div>
           </article>
-          <article class="research-item">
-            <span class="item-number">02</span>
-            <div><h3><span data-lang="zh">MEIS2、DNA 损伤应答与 NHEJ</span><span data-lang="en">MEIS2, DNA-damage response &amp; NHEJ</span></h3>
-              <p><span data-lang="zh">探索 MEIS2 相关功能及其在神经元 DNA 损伤修复中的潜在作用。</span><span data-lang="en">Investigating MEIS2-associated functions and their potential role in neuronal DNA repair.</span></p></div>
+          <article class="research-card">
+            <span class="card-index">02</span>
+            <h3><span data-lang="zh">DNA 损伤应答与 NHEJ 修复</span><span data-lang="en">DNA damage response & NHEJ repair</span></h3>
+            <p><span data-lang="zh">研究成熟神经元的 DNA 损伤应答、非同源末端连接修复及 MEIS2 相关分子功能。</span><span data-lang="en">Investigating DNA-damage responses, non-homologous end joining, and MEIS2-associated molecular functions in post-mitotic neurons.</span></p>
+            <div class="tag-row"><span>MEIS2</span><span>DNA repair</span><span>NHEJ</span></div>
           </article>
-          <article class="research-item">
-            <span class="item-number">03</span>
-            <div><h3><span data-lang="zh">细胞周期重进入与神经元身份</span><span data-lang="en">Cell-cycle re-entry &amp; neuronal identity</span></h3>
-              <p><span data-lang="zh">研究成熟神经元异常细胞周期活动与细胞损伤之间的联系。</span><span data-lang="en">Studying the relationship between aberrant cell-cycle activity and neuronal injury.</span></p></div>
+          <article class="research-card">
+            <span class="card-index">03</span>
+            <h3><span data-lang="zh">转录组学与可变剪接</span><span data-lang="en">Transcriptomics & alternative splicing</span></h3>
+            <p><span data-lang="zh">结合单细胞及细胞类型分辨的转录组数据，研究基因表达、剪接调控和神经细胞状态。</span><span data-lang="en">Using single-cell and cell-type-resolved transcriptomic data to study gene expression, splicing regulation, and neuronal states.</span></p>
+            <div class="tag-row"><span>scRNA-seq</span><span>Splicing</span><span>Cell types</span></div>
           </article>
-          <article class="research-item">
-            <span class="item-number">04</span>
-            <div><h3><span data-lang="zh">转录组学与可变剪接</span><span data-lang="en">Transcriptomics &amp; alternative splicing</span></h3>
-              <p><span data-lang="zh">利用细胞类型分辨的转录组数据研究基因表达与剪接调控。</span><span data-lang="en">Using cell-type-resolved transcriptomic data to investigate gene expression and splicing regulation.</span></p></div>
+          <article class="research-card">
+            <span class="card-index">04</span>
+            <h3><span data-lang="zh">神经元—胶质细胞互作</span><span data-lang="en">Neuron–glia interactions</span></h3>
+            <p><span data-lang="zh">关注 Tau 病理、神经炎症及神经元与胶质细胞之间的双向调控。</span><span data-lang="en">Exploring tau-associated pathology, neuroinflammation, and bidirectional communication between neurons and glial cells.</span></p>
+            <div class="tag-row"><span>Neuroinflammation</span><span>Glia</span><span>AD</span></div>
           </article>
         </div>
+
+        <article class="research-highlight">
+          <div class="highlight-image">
+            <img src="assets/news/NN_GraphicalAbstract.jpg" alt="Graphical abstract illustrating tau pathology and neuronal vulnerability">
+          </div>
+          <div class="highlight-copy">
+            <p class="eyebrow">RESEARCH HIGHLIGHT · 2026</p>
+            <h3><span data-lang="zh">脊髓 Tau 病理与神经元亚型脆弱性</span><span data-lang="en">Tau pathology and cell-type-specific neuronal vulnerability</span></h3>
+            <p><span data-lang="zh">相关研究揭示脊髓 CCK 神经元对 Tau 病理的易损性，并将触觉功能障碍与阿尔茨海默病认知变化联系起来。</span><span data-lang="en">This work identifies spinal CCK neurons as vulnerable to tau pathology and links tactile dysfunction with cognitive changes in Alzheimer's disease.</span></p>
+            <a class="text-link" href="https://doi.org/10.1038/s41593-025-02137-4" target="_blank" rel="noopener noreferrer"><span data-lang="zh">阅读 Nature Neuroscience 论文</span><span data-lang="en">Read the Nature Neuroscience paper</span> ↗</a>
+          </div>
+        </article>
       </section>
 
       <section class="content-section" id="publications">
         <div class="section-heading">
-          <span class="section-number">02</span>
+          <span class="section-number">02 / PUBLICATIONS</span>
           <div>
-            <h2><span data-lang="zh">代表性论文</span><span data-lang="en">Selected publications</span></h2>
-            <p><span data-lang="zh">已发表的同行评审研究。</span><span data-lang="en">Peer-reviewed research contributions.</span></p>
+            <h2><span data-lang="zh">近期论文</span><span data-lang="en">Recent publications</span></h2>
+            <p><span data-lang="zh">精选同行评审研究，完整列表与文献链接见论文页面。</span><span data-lang="en">Selected peer-reviewed work. See the publications page for the full indexed list and source links.</span></p>
           </div>
+          <a class="section-more" href="publications.html"><span data-lang="zh">全部论文</span><span data-lang="en">All publications</span> ↗</a>
         </div>
-        <div class="publication-list">
-          <article class="publication">
-            <div class="publication-year">2025</div>
-            <div class="publication-body">
+        <div class="recent-publications">
+          <article class="recent-paper">
+            <div class="paper-year">2026</div>
+            <div>
+              <p class="paper-journal">Neuron · Research Article</p>
+              <h3>Trait-linked brainstem circuit resilience balances tau pathology-induced cellular vulnerability in Alzheimer's disease</h3>
+              <p class="paper-authors">Jie-Qun Zheng, Hong-Wei Fan, Chengye Yao, et al., <strong>Zhi-Qiang Liu</strong>, et al.</p>
+              <a href="https://doi.org/10.1016/j.neuron.2026.10.002" target="_blank" rel="noopener noreferrer">DOI ↗</a>
+            </div>
+          </article>
+          <article class="recent-paper">
+            <div class="paper-year">2026</div>
+            <div>
+              <p class="paper-journal">Nature Neuroscience · Co-first author</p>
               <h3>Spinal cord Tau pathology induces tactile deficits and cognitive impairment in Alzheimer's disease via dysregulation of CCK neurons</h3>
-              <p class="authors">Yang Zhou*, Wen-Lian Li*, <strong>Zhi-Qiang Liu*</strong>, et al.</p>
-              <p class="journal"><em>Nature Neuroscience</em> · 2025</p>
-              <div class="text-links">
-                <a href="https://pubmed.ncbi.nlm.nih.gov/41254283/" target="_blank" rel="noopener noreferrer">PubMed ↗</a>
-                <a href="https://doi.org/10.1038/s41593-025-02137-4" target="_blank" rel="noopener noreferrer">DOI ↗</a>
-              </div>
+              <p class="paper-authors">Yang Zhou*, Wen-Lian Li*, <strong>Zhi-Qiang Liu*</strong>, et al.</p>
+              <a href="https://doi.org/10.1038/s41593-025-02137-4" target="_blank" rel="noopener noreferrer">DOI ↗</a>
             </div>
           </article>
-          <article class="publication">
-            <div class="publication-year">2025</div>
-            <div class="publication-body">
+          <article class="recent-paper">
+            <div class="paper-year">2025</div>
+            <div>
+              <p class="paper-journal">Molecular Neurodegeneration · Review · Co-first author</p>
               <h3>Brain somatic mutations in Alzheimer's disease: linking genetic mosaicism to neurodegeneration</h3>
-              <p class="authors">Zu-Guang Li*, Juan Zhang*, <strong>Zhi-Qiang Liu*</strong>, et al.</p>
-              <p class="journal"><em>Molecular Neurodegeneration</em> · 20, 104 (2025)</p>
-              <div class="text-links">
-                <a href="https://pubmed.ncbi.nlm.nih.gov/41068782/" target="_blank" rel="noopener noreferrer">PubMed ↗</a>
-                <a href="https://doi.org/10.1186/s13024-025-00895-0" target="_blank" rel="noopener noreferrer">DOI ↗</a>
-              </div>
+              <p class="paper-authors">Zuguang Li*, Juan Zhang*, <strong>Zhi-Qiang Liu*</strong>, et al.</p>
+              <a href="https://doi.org/10.1186/s13024-025-00895-0" target="_blank" rel="noopener noreferrer">DOI ↗</a>
             </div>
           </article>
         </div>
-        <p class="publication-note"><span data-lang="zh">* 共同第一作者。</span><span data-lang="en">* Co-first authors.</span></p>
+      </section>
+
+      <section class="content-section" id="resources-preview">
+        <div class="section-heading">
+          <span class="section-number">03 / RESOURCES</span>
+          <div>
+            <h2><span data-lang="zh">科研资源索引</span><span data-lang="en">Research resource directory</span></h2>
+            <p><span data-lang="zh">集中整理脑图谱、组学数据库、疾病队列和分析工具，逐步建设个人科研入口。</span><span data-lang="en">A growing index of brain atlases, omics databases, disease cohorts, and analysis tools.</span></p>
+          </div>
+          <a class="section-more" href="resources.html"><span data-lang="zh">进入资源库</span><span data-lang="en">Open directory</span> ↗</a>
+        </div>
+        <div class="resource-preview-grid">
+          <a href="resources.html#brain-atlases"><span class="resource-symbol">01</span><strong><span data-lang="zh">脑图谱与神经解剖</span><span data-lang="en">Brain atlases & neuroanatomy</span></strong><small><span data-lang="zh">解剖结构、图谱与空间定位</span><span data-lang="en">Anatomy, atlases, and spatial mapping</span></small></a>
+          <a href="resources.html#single-cell"><span class="resource-symbol">02</span><strong><span data-lang="zh">单细胞与空间组学</span><span data-lang="en">Single-cell & spatial omics</span></strong><small><span data-lang="zh">细胞图谱与多组学数据</span><span data-lang="en">Cell atlases and multi-omics</span></small></a>
+          <a href="resources.html#genomics"><span class="resource-symbol">03</span><strong><span data-lang="zh">转录组与基因组</span><span data-lang="en">Transcriptomics & genomics</span></strong><small><span data-lang="zh">表达、剪接与基因注释</span><span data-lang="en">Expression, splicing, and annotation</span></small></a>
+          <a href="resources.html#disease-data"><span class="resource-symbol">04</span><strong><span data-lang="zh">疾病队列与临床数据</span><span data-lang="en">Disease cohorts & clinical data</span></strong><small><span data-lang="zh">疾病模型与人群数据</span><span data-lang="en">Disease models and cohort data</span></small></a>
+        </div>
       </section>
 
       <section class="content-section" id="projects">
         <div class="section-heading">
-          <span class="section-number">03</span>
+          <span class="section-number">04 / SOFTWARE</span>
           <div>
-            <h2><span data-lang="zh">精选项目</span><span data-lang="en">Selected projects</span></h2>
-            <p><span data-lang="zh">科研之外，也持续构建实用的软件与开发工具。</span><span data-lang="en">Alongside research, I build practical software and developer tools.</span></p>
+            <h2><span data-lang="zh">软件与开发项目</span><span data-lang="en">Software & engineering projects</span></h2>
+            <p><span data-lang="zh">围绕科研工作流、Linux 基础设施与 AI 工具构建的开源项目。</span><span data-lang="en">Open-source tools for research workflows, Linux infrastructure, and AI tooling.</span></p>
           </div>
         </div>
         <div class="project-grid">
-          <a class="project-card" href="https://github.com/liuzq1103/Helix" target="_blank" rel="noopener noreferrer">
-            <div class="project-top"><span>01 / RESEARCH SOFTWARE</span><span>↗</span></div>
-            <h3>Helix</h3>
-            <p><span data-lang="zh">面向 macOS 的科研数据分析与可视化工具。</span><span data-lang="en">Scientific data analysis and visualization for macOS.</span></p>
-            <span class="project-stack">macOS · R · Plotly</span>
-          </a>
           <a class="project-card" href="https://github.com/liuzq1103/mihomoctl" target="_blank" rel="noopener noreferrer">
-            <div class="project-top"><span>02 / DEVELOPER TOOLS</span><span>↗</span></div>
+            <div class="project-top"><span>GO · LINUX · CLI / TUI</span><span>↗</span></div>
             <h3>mihomoctl</h3>
-            <p><span data-lang="zh">用于 Linux 的 Mihomo 管理命令行与终端控制台。</span><span data-lang="en">A Go CLI and terminal console for managing Mihomo on Linux.</span></p>
-            <span class="project-stack">Go · Linux · CLI / TUI</span>
+            <p><span data-lang="zh">面向共享 Linux 服务器的独立 Mihomo 管理工具，提供 CLI 与终端控制台。</span><span data-lang="en">An independent Mihomo manager for shared Linux servers, with a CLI and terminal console.</span></p>
           </a>
           <a class="project-card" href="https://github.com/liuzq1103/memory-monitor" target="_blank" rel="noopener noreferrer">
-            <div class="project-top"><span>03 / INFRASTRUCTURE</span><span>↗</span></div>
+            <div class="project-top"><span>PYTHON · LINUX · CGROUP V2</span><span>↗</span></div>
             <h3>Memory Monitor</h3>
-            <p><span data-lang="zh">面向共享 Linux 分析服务器的轻量级内存监控与保护服务。</span><span data-lang="en">Lightweight memory monitoring and protection for shared Linux analysis servers.</span></p>
-            <span class="project-stack">Python · Linux · cgroup v2</span>
+            <p><span data-lang="zh">为共享分析服务器提供轻量级内存监控、告警与可选进程保护。</span><span data-lang="en">Lightweight memory monitoring, alerting, and optional process protection for shared analysis servers.</span></p>
           </a>
           <a class="project-card" href="https://github.com/liuzq1103/magpie-page-token-widget" target="_blank" rel="noopener noreferrer">
-            <div class="project-top"><span>04 / AI ECOSYSTEM</span><span>↗</span></div>
-            <h3>Magpie Token Widget</h3>
-            <p><span data-lang="zh">将 AI 订阅额度与 Token 用量带到 iPhone 桌面。</span><span data-lang="en">An iPhone widget for AI subscription quotas and token usage.</span></p>
-            <span class="project-stack">TypeScript · Magpie · iOS</span>
+            <div class="project-top"><span>MAGPIE · TYPESCRIPT · IOS</span><span>↗</span></div>
+            <h3>Magpie Page Token Widget</h3>
+            <p><span data-lang="zh">将 Magpie 中的订阅额度与真实 Token 用量同步到 iPhone 小组件。</span><span data-lang="en">Brings subscription quotas and token usage from Magpie to an iPhone widget.</span></p>
+          </a>
+          <a class="project-card" href="https://github.com/liuzq1103/incremental-backup-assistant" target="_blank" rel="noopener noreferrer">
+            <div class="project-top"><span>PYTHON · WINDOWS · TKINTER</span><span>↗</span></div>
+            <h3>Incremental Backup Assistant</h3>
+            <p><span data-lang="zh">提供差异预览、人工勾选与校验日志的 Windows 增量备份工具。</span><span data-lang="en">A Windows backup utility with difference preview, selective copying, and verification logs.</span></p>
           </a>
         </div>
       </section>
 
-      <section class="cv-strip" id="cv">
+      <section class="cv-strip">
         <div>
-          <span class="section-number">04</span>
-          <h2><span data-lang="zh">完整履历</span><span data-lang="en">Curriculum vitae</span></h2>
-          <p><span data-lang="zh">教育经历、研究经历及完整成果列表，请参阅 PDF 版个人 CV。</span><span data-lang="en">For education, research experience, and the complete record, see the PDF CV.</span></p>
+          <span class="section-number">05 / CV</span>
+          <h2><span data-lang="zh">个人学术履历</span><span data-lang="en">Curriculum vitae</span></h2>
+          <p><span data-lang="zh">教育与研究经历、学术成果及完整履历请参阅 PDF 版 CV。</span><span data-lang="en">Education, research experience, and the full academic record are available in the PDF CV.</span></p>
         </div>
-        <a class="button button-dark" href="cv.html"><span data-lang="zh">打开 CV</span><span data-lang="en">Open CV</span><span aria-hidden="true">↗</span></a>
+        <a class="button button-dark" href="cv.html"><span data-lang="zh">查看 CV</span><span data-lang="en">View CV</span><span aria-hidden="true">↗</span></a>
       </section>
     </div>
   </main>
@@ -168,7 +214,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <span>© 2026 Zhi-Qiang Liu</span>
-      <a href="https://github.com/liuzq1103" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <div><a href="https://orcid.org/0009-0008-9802-214X" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="https://github.com/liuzq1103" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
     </div>
   </footer>
 
