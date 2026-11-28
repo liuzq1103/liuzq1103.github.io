@@ -1,13 +1,147 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN" data-site-lang="zh">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=index.html#projects">
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="index.html#projects">
-  <title>Page moved</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A curated resource directory for neuroscience, brain atlases, omics databases, and research tools.">
+  <title>Resources · Zhi-Qiang Liu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>This page has moved. <a href="index.html#projects">Selected projects</a>.</p>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="index.html">ZL<span>.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html"><span data-lang="zh">主页</span><span data-lang="en">Home</span></a>
+        <a href="index.html#research"><span data-lang="zh">研究</span><span data-lang="en">Research</span></a>
+        <a href="publications.html"><span data-lang="zh">论文</span><span data-lang="en">Publications</span></a>
+        <a class="active" href="resources.html"><span data-lang="zh">资源</span><span data-lang="en">Resources</span></a>
+        <a href="index.html#projects"><span data-lang="zh">项目</span><span data-lang="en">Projects</span></a>
+        <a class="nav-cv" href="cv.html">CV ↗</a>
+        <button class="language-toggle" id="language-toggle" type="button">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero section-shell">
+      <p class="eyebrow">CURATED KNOWLEDGE PORTAL</p>
+      <h1><span data-lang="zh">科研资源库</span><span data-lang="en">Research Resources</span></h1>
+      <p><span data-lang="zh">面向神经科学与计算生物学的数据库、脑图谱、公开数据集和分析工具索引。资源将按主题分类，并逐步补充官方入口与使用说明。</span><span data-lang="en">A curated index of databases, brain atlases, public datasets, and analysis tools for neuroscience and computational biology. Resources are organized by topic, with official links and notes added progressively.</span></p>
+      <div class="page-meta"><span id="resource-count">0 resources</span><span>5 categories</span><span><span data-lang="zh">持续整理中</span><span data-lang="en">Growing directory</span></span></div>
+    </section>
+
+    <section class="content-shell resource-page-content">
+      <div class="resource-intro">
+        <div>
+          <h2><span data-lang="zh">按研究主题浏览</span><span data-lang="en">Browse by research area</span></h2>
+          <p><span data-lang="zh">参考 BrainInfo 等学术门户的组织方式，将分散的科研入口整理成可检索、可扩展的资源目录。</span><span data-lang="en">Inspired by academic portals such as BrainInfo, this directory brings scattered research entry points into one searchable, extensible index.</span></p>
+        </div>
+        <label class="search-box resource-search">
+          <span class="search-icon">⌕</span>
+          <input id="resource-search" type="search" placeholder="Search databases, datasets, atlases, or tools" aria-label="Search resources">
+        </label>
+      </div>
+
+      <div class="resource-directory" id="resource-directory" aria-live="polite">
+        <div class="resource-loading"><span class="loading-dot"></span><span data-lang="zh">正在载入资源目录…</span><span data-lang="en">Loading resource directory…</span></div>
+      </div>
+
+      <section class="resource-maintenance">
+        <div class="resource-maintenance-icon">＋</div>
+        <div>
+          <h2><span data-lang="zh">持续扩展</span><span data-lang="en">Built to grow</span></h2>
+          <p><span data-lang="zh">新增数据库时，只需向 <code>data/resources.json</code> 添加条目，不需要修改页面布局。优先收录官方数据库入口、稳定的数据集页面和有明确维护者的工具。</span><span data-lang="en">To add a database, append an entry to <code>data/resources.json</code>; no layout changes are needed. Prioritize official database portals, stable dataset records, and actively maintained tools.</span></p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner"><span>© 2026 Zhi-Qiang Liu</span><div><a href="index.html">Home</a><a href="https://orcid.org/0009-0008-9802-214X" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="https://github.com/liuzq1103" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.getElementById("language-toggle");
+      var requested = new URLSearchParams(window.location.search).get("lang");
+      function setLanguage(language) {
+        var lang = language === "en" ? "en" : "zh";
+        root.dataset.siteLang = lang;
+        root.lang = lang === "zh" ? "zh-CN" : "en";
+        toggle.textContent = lang === "zh" ? "EN" : "中文";
+        toggle.setAttribute("aria-label", lang === "zh" ? "Switch to English" : "切换到中文");
+      }
+      setLanguage(requested || "zh");
+      toggle.addEventListener("click", function () { setLanguage(root.dataset.siteLang === "zh" ? "en" : "zh"); });
+
+      var directory = document.getElementById("resource-directory");
+      var search = document.getElementById("resource-search");
+      var categories = [];
+      function escapeHtml(value) {
+        return String(value == null ? "" : value).replace(/[&<>"']/g, function (char) {
+          return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char];
+        });
+      }
+      function localized(value) {
+        if (!value) return "";
+        if (typeof value === "string") return value;
+        return value[root.dataset.siteLang] || value.en || value.zh || "";
+      }
+      function safeUrl(value) {
+        try {
+          var parsed = new URL(value);
+          return parsed.protocol === "https:" ? parsed.href : "";
+        } catch (error) {
+          return "";
+        }
+      }
+      function render() {
+        var query = search.value.trim().toLowerCase();
+        var total = 0;
+        var visibleCategories = 0;
+        var html = categories.map(function (category) {
+          var items = Array.isArray(category.items) ? category.items : [];
+          var title = localized(category.title);
+          var description = localized(category.description);
+          var matching = items.filter(function (item) {
+            var haystack = [item.title, localized(item.description), item.type, item.species, (item.tags || []).join(" ")].join(" ").toLowerCase();
+            return !query || haystack.indexOf(query) !== -1;
+          });
+          var categoryMatches = !query || (title + " " + description).toLowerCase().indexOf(query) !== -1;
+          if (query && items.length && matching.length === 0 && !categoryMatches) return "";
+          if (query && !items.length && !categoryMatches) return "";
+          visibleCategories += 1;
+          total += matching.length;
+          var itemsHtml = matching.length ? matching.map(function (item) {
+            var url = safeUrl(item.url);
+            var tags = Array.isArray(item.tags) ? item.tags : [];
+            return '<article class="resource-card">' +
+              '<div class="resource-card-top"><span>' + escapeHtml(item.type || "Resource") + '</span>' +
+              (item.updated ? '<span>' + escapeHtml(item.updated) + '</span>' : '') + '</div>' +
+              '<h3>' + escapeHtml(item.title || "Untitled resource") + '</h3>' +
+              '<p>' + escapeHtml(localized(item.description)) + '</p>' +
+              (tags.length ? '<div class="tag-row">' + tags.map(function (tag) { return '<span>' + escapeHtml(tag) + '</span>'; }).join("") + '</div>' : '') +
+              (url ? '<a class="text-link" href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">Open resource ↗</a>' : '') +
+              '</article>';
+          }).join("") : '<div class="resource-empty"><span class="empty-mark">＋</span><div><strong><span data-lang="zh">资源持续整理中</span><span data-lang="en">Collection in progress</span></strong><p><span data-lang="zh">该分类的数据库链接将在核实来源后添加。</span><span data-lang="en">Verified database links will be added to this category.</span></p></div></div>';
+          return '<section class="resource-category" id="' + escapeHtml(category.id || "") + '">' +
+            '<div class="resource-category-heading"><div><span class="section-number">' + escapeHtml(category.index || "") + '</span><h2>' + escapeHtml(title) + '</h2><p>' + escapeHtml(description) + '</p></div><span class="category-count">' + matching.length + ' <span data-lang="zh">项资源</span><span data-lang="en">resources</span></span></div>' +
+            '<div class="resource-items">' + itemsHtml + '</div></section>';
+        }).join("");
+        directory.innerHTML = html || '<div class="resource-empty resource-no-results"><strong><span data-lang="zh">没有匹配的资源分类</span><span data-lang="en">No matching categories</span></strong></div>';
+        document.getElementById("resource-count").textContent = total + (root.dataset.siteLang === "zh" ? " 项资源" : " resources");
+      }
+      fetch("data/resources.json")
+        .then(function (response) { if (!response.ok) throw new Error("Resource index unavailable"); return response.json(); })
+        .then(function (data) { categories = Array.isArray(data.categories) ? data.categories : []; render(); })
+        .catch(function () {
+          directory.innerHTML = '<div class="resource-empty"><strong><span data-lang="zh">资源目录暂时无法载入</span><span data-lang="en">Resource directory is temporarily unavailable</span></strong><p><span data-lang="zh">请稍后刷新页面。</span><span data-lang="en">Please refresh the page later.</span></p></div>';
+        });
+      search.addEventListener("input", render);
+      root.addEventListener("site-language-change", render);
+    })();
+  </script>
 </body>
 </html>
