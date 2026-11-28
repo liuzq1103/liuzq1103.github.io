@@ -741,3 +741,153 @@ body { font-size: 18px; line-height: 1.8; }
   .cv-heading h1 { font-size: 30px; }
   .cv-heading p { font-size: 13px; }
 }
+
+
+/* Layout refinement: fuller page, clearer section hierarchy, and liuzq wordmark */
+:root { --max: 1180px; }
+.nav-wrap, .footer-inner, .section-shell, .content-shell {
+  width: min(var(--max), calc(100% - 64px));
+}
+.wordmark {
+  font-size: 22px;
+  font-weight: 780;
+  letter-spacing: -.055em;
+}
+.hero { padding: 56px 0 44px; }
+.hero-grid {
+  grid-template-columns: minmax(0, 1fr) 236px;
+  gap: 72px;
+}
+.hero-portrait { width: 228px; }
+.hero-intro { max-width: 790px; }
+.profile-links { gap: 22px; flex-wrap: wrap; }
+.profile-links a { font-size: 14px; }
+.portal-shortcuts {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 0;
+}
+.portal-shortcuts > a { min-height: 86px; padding: 15px 17px; }
+.portal-shortcuts strong { font-size: 15px; }
+.portal-shortcuts small { font-size: 12px; line-height: 1.5; }
+.content-shell { padding-bottom: 52px; }
+.content-section { padding: 43px 0; }
+.section-heading {
+  grid-template-columns: 116px minmax(0, 1fr) auto;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.section-number { font-size: 11px; }
+.section-heading h2 { font-size: 32px; }
+.section-heading p { font-size: 15px; }
+.research-grid, .research-highlight, .recent-publications,
+.resource-preview-grid, .project-grid { margin-left: 132px; }
+.research-grid { gap: 15px; }
+.research-card { min-height: 178px; padding: 22px 24px; }
+.research-card h3 { font-size: 20px; }
+.research-card p { font-size: 16px; line-height: 1.8; }
+.tag-row { gap: 8px; }
+.tag-row span { font-size: 11px; }
+.research-highlight { margin-top: 20px; gap: 26px; padding: 22px; }
+.highlight-copy h3 { font-size: 23px; }
+.highlight-copy p:not(.eyebrow) { font-size: 16px; line-height: 1.8; }
+.recent-publications { margin-left: 132px; }
+.recent-paper { grid-template-columns: 64px minmax(0, 1fr); gap: 22px; padding: 22px 0; }
+.recent-paper h3 { max-width: 920px; font-size: 19px; line-height: 1.55; }
+.paper-authors { font-size: 13px; }
+.paper-journal { font-size: 12px; }
+.resource-preview-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-left: 132px;
+}
+.resource-preview-grid a { min-height: 148px; padding: 18px; }
+.resource-preview-grid strong { font-size: 15px; }
+.resource-preview-grid small { font-size: 12px; line-height: 1.65; }
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-left: 132px;
+}
+.project-card { min-height: 155px; padding: 22px 24px; }
+.project-card h3 { font-size: 20px; }
+.project-card p { font-size: 15px; line-height: 1.8; }
+
+/* CV is the fifth destination, presented as a separate profile action */
+.cv-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+  margin: 36px 0 0;
+  padding: 30px 34px;
+  border: 1px solid #d8e3eb;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: #edf3f7;
+}
+.cv-strip > div {
+  display: grid;
+  grid-template-columns: 95px minmax(0, 1fr);
+  column-gap: 18px;
+}
+.cv-strip .section-number { grid-row: span 2; }
+.cv-strip h2 { font-size: 25px; }
+.cv-strip p { font-size: 15px; line-height: 1.7; }
+
+@media (max-width: 900px) {
+  .nav-wrap, .footer-inner, .section-shell, .content-shell {
+    width: min(var(--max), calc(100% - 40px));
+  }
+  .hero-grid { gap: 40px; }
+  .section-heading { grid-template-columns: 100px minmax(0, 1fr) auto; }
+  .research-grid, .research-highlight, .recent-publications,
+  .resource-preview-grid, .project-grid { margin-left: 112px; }
+  .resource-preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .portal-shortcuts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 680px) {
+  .nav-wrap, .footer-inner, .section-shell, .content-shell, .cv-header, .cv-heading {
+    width: min(100% - 32px, var(--max));
+  }
+  .wordmark { font-size: 21px; }
+  .hero { padding: 40px 0 34px; }
+  .hero-grid { grid-template-columns: minmax(0, 1fr) 104px; gap: 16px; }
+  .hero-portrait { width: 104px; }
+  .hero-intro { font-size: 16px; line-height: 1.8; }
+  .hero-role { font-size: 16px; }
+  .profile-links { gap: 13px 17px; }
+  .profile-links a { font-size: 12px; }
+  .portal-shortcuts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .portal-shortcuts > a { min-height: 78px; padding: 12px; gap: 8px; }
+  .portal-shortcuts strong { font-size: 13px; }
+  .portal-shortcuts small { font-size: 11px; }
+  .content-section { padding: 34px 0; }
+  .section-heading { grid-template-columns: 1fr auto; gap: 7px; }
+  .section-heading .section-number { grid-column: 1 / -1; }
+  .section-heading h2 { font-size: 27px; }
+  .section-heading p { font-size: 14px; }
+  .research-grid, .research-highlight, .recent-publications,
+  .resource-preview-grid, .project-grid { margin-left: 0; }
+  .research-grid { grid-template-columns: 1fr; gap: 11px; }
+  .research-card { min-height: 0; padding: 18px 19px; }
+  .research-card h3 { font-size: 18px; }
+  .research-card p { font-size: 15px; }
+  .research-highlight { grid-template-columns: 1fr; padding: 16px; }
+  .recent-paper { grid-template-columns: 48px minmax(0, 1fr); gap: 12px; }
+  .recent-paper h3 { font-size: 16px; }
+  .paper-authors { font-size: 12px; }
+  .resource-preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .resource-preview-grid a { min-height: 128px; padding: 14px; }
+  .resource-preview-grid strong { font-size: 13px; }
+  .resource-preview-grid small { font-size: 11px; }
+  .project-grid { grid-template-columns: 1fr; gap: 10px; }
+  .project-card { min-height: 0; padding: 18px 19px; }
+  .project-card h3 { font-size: 18px; }
+  .project-card p { font-size: 14px; }
+  .cv-strip { align-items: flex-start; flex-direction: column; gap: 18px; margin-top: 25px; padding: 22px; }
+  .cv-strip > div { grid-template-columns: 1fr; gap: 5px; }
+  .cv-strip .section-number { grid-row: auto; }
+  .cv-strip h2 { font-size: 22px; }
+  .cv-strip p { grid-column: 1; font-size: 14px; }
+}
