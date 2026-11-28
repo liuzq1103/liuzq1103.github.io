@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN" data-site-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <title>CV · Zhi-Qiang Liu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cv-page">
+  <header class="cv-header">
+    <a href="index.html">← <span data-lang="zh">返回个人主页</span><span data-lang="en">Back to homepage</span></a>
+    <button class="language-toggle" id="language-toggle" type="button">EN</button>
+  </header>
+  <main>
+    <div class="cv-heading">
+      <div>
+        <h1>Curriculum Vitae</h1>
+        <p><span data-lang="zh">刘志强 · Zhi-Qiang Liu</span><span data-lang="en">Zhi-Qiang Liu</span></p>
+      </div>
+      <a class="button button-dark" href="assets/people/liuzq_cv.pdf" target="_blank" rel="noopener noreferrer"><span data-lang="zh">下载 PDF</span><span data-lang="en">Download PDF</span> ↗</a>
+    </div>
+    <iframe class="pdf-frame" src="assets/people/liuzq_cv.pdf#view=FitH" title="Zhi-Qiang Liu CV">
+      <p><span data-lang="zh">浏览器无法显示 PDF，请</span><span data-lang="en">Your browser cannot display the PDF. Please</span> <a href="assets/people/liuzq_cv.pdf"><span data-lang="zh">下载 CV</span><span data-lang="en">download the CV</span></a>.</p>
+    </iframe>
+  </main>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.getElementById("language-toggle");
+      var requested = new URLSearchParams(window.location.search).get("lang");
+      function setLanguage(language) {
+        var lang = language === "en" ? "en" : "zh";
+        root.dataset.siteLang = lang;
+        root.lang = lang === "zh" ? "zh-CN" : "en";
+        toggle.textContent = lang === "zh" ? "EN" : "中文";
+      }
+      setLanguage(requested || "zh");
+      toggle.addEventListener("click", function () {
+        setLanguage(root.dataset.siteLang === "zh" ? "en" : "zh");
+      });
+    })();
+  </script>
+</body>
+</html>
