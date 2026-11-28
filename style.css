@@ -581,3 +581,163 @@ body { font-size: 17px; line-height: 1.75; }
   .cv-heading h1 { font-size: 28px; }
   .cv-heading p { font-size: 12px; }
 }
+
+
+/* Third typography pass — make reading size clearly comfortable */
+body { font-size: 18px; line-height: 1.8; }
+.wordmark { font-size: 26px; }
+.main-nav { gap: 23px; font-size: 15px; }
+.language-toggle { font-size: 14px; padding: 6px 11px; }
+.eyebrow { font-size: 13px; }
+.hero h1 { font-size: clamp(48px, 6.2vw, 74px); }
+.hero-role { font-size: 21px; }
+.hero-intro { font-size: 19px; line-height: 1.85; }
+.hero-affiliation { font-size: 14px; }
+.button { font-size: 15px; min-height: 46px; }
+.profile-links a { font-size: 14px; }
+.hero-portrait figcaption { font-size: 13px; }
+.shortcut-index { font-size: 13px; }
+.portal-shortcuts strong { font-size: 16px; }
+.portal-shortcuts small { font-size: 13px; }
+.section-number { font-size: 12px; }
+.section-heading h2 { font-size: 34px; }
+.section-heading p { font-size: 16px; line-height: 1.75; }
+.section-more { font-size: 14px; }
+.card-index { font-size: 13px; }
+.research-card h3 { font-size: 21px; }
+.research-card p { font-size: 17px; line-height: 1.85; }
+.tag-row span { font-size: 12px; }
+.highlight-copy .eyebrow { font-size: 12px; }
+.highlight-copy h3 { font-size: 24px; }
+.highlight-copy p:not(.eyebrow) { font-size: 17px; line-height: 1.85; }
+.text-link { font-size: 15px; }
+.paper-year { font-size: 16px; }
+.paper-journal { font-size: 13px; }
+.recent-paper h3 { font-size: 20px; line-height: 1.65; }
+.paper-authors { font-size: 14px; line-height: 1.8; }
+.recent-paper a { font-size: 13px; }
+.resource-symbol { font-size: 13px; }
+.resource-preview-grid strong { font-size: 16px; }
+.resource-preview-grid small { font-size: 14px; line-height: 1.7; }
+.project-top { font-size: 12px; }
+.project-card h3 { font-size: 22px; }
+.project-card p { font-size: 17px; line-height: 1.85; }
+.cv-strip h2 { font-size: 26px; }
+.cv-strip p { font-size: 16px; }
+.footer-inner { font-size: 13px; }
+.page-hero h1 { font-size: clamp(44px, 5.5vw, 56px); }
+.page-hero > p:not(.eyebrow) { font-size: 18px; line-height: 1.85; }
+.page-meta { font-size: 13px; }
+.publication-controls { gap: 16px; }
+.search-box { min-height: 46px; }
+.search-box input { font-size: 16px; }
+.filter-button { font-size: 14px; padding: 8px 12px; }
+.result-count { font-size: 13px; }
+.pub-card { grid-template-columns: 112px minmax(0, 1fr); gap: 25px; padding: 28px 0; }
+.pub-year { font-size: 18px; }
+.pub-kind { font-size: 12px; }
+.pub-main h2 { font-size: 21px; line-height: 1.65; }
+.pub-authors { font-size: 15px; line-height: 1.8; }
+.pub-journal { font-size: 14px; }
+.pub-summary { font-size: 15px; line-height: 1.9; }
+.pub-links a { font-size: 13px; }
+.pub-footnote, .archive-note { font-size: 13px; line-height: 1.8; }
+.resource-intro h2 { font-size: 25px; }
+.resource-intro p { font-size: 15px; }
+.resource-category-heading h2 { font-size: 22px; }
+.resource-category-heading p { font-size: 15px; }
+.category-count { font-size: 13px; }
+.resource-card-top { font-size: 12px; }
+.resource-card h3 { font-size: 19px; }
+.resource-card p { font-size: 15px; line-height: 1.85; }
+.resource-card .text-link { font-size: 14px; }
+.resource-empty strong { font-size: 15px; }
+.resource-empty p { font-size: 14px; }
+.resource-maintenance h2 { font-size: 17px; }
+.resource-maintenance p { font-size: 14px; line-height: 1.8; }
+.cv-header a { font-size: 15px; }
+.cv-heading h1 { font-size: 36px; }
+.cv-heading p { font-size: 15px; }
+
+@media (max-width: 900px) {
+  .main-nav { gap: 15px; font-size: 13px; }
+  .hero-intro { font-size: 18px; }
+  .section-heading h2 { font-size: 31px; }
+  .research-card h3 { font-size: 20px; }
+  .research-card p { font-size: 16px; }
+  .recent-paper h3 { font-size: 19px; }
+  .pub-main h2 { font-size: 20px; }
+}
+@media (max-width: 680px) {
+  body { font-size: 17px; line-height: 1.75; }
+  .wordmark { font-size: 23px; }
+  .main-nav { gap: 12px; font-size: 12px; }
+  .language-toggle { font-size: 12px; }
+  .eyebrow { font-size: 11px; }
+  .hero h1 { font-size: clamp(39px, 10vw, 52px); }
+  .hero-role { font-size: 17px; }
+  .hero-intro { font-size: 17px; line-height: 1.8; }
+  .hero-affiliation { font-size: 12px; }
+  .button { font-size: 13px; min-height: 43px; }
+  .profile-links a { font-size: 13px; }
+  .hero-portrait figcaption { font-size: 11px; }
+  .shortcut-index { font-size: 11px; }
+  .portal-shortcuts strong { font-size: 14px; }
+  .portal-shortcuts small { font-size: 12px; }
+  .section-number { font-size: 10px; }
+  .section-heading h2 { font-size: 28px; }
+  .section-heading p { font-size: 14px; }
+  .section-more { font-size: 12px; }
+  .card-index { font-size: 11px; }
+  .research-card h3 { font-size: 19px; }
+  .research-card p { font-size: 16px; line-height: 1.8; }
+  .tag-row span { font-size: 11px; }
+  .highlight-copy h3 { font-size: 20px; }
+  .highlight-copy p:not(.eyebrow) { font-size: 16px; }
+  .text-link { font-size: 13px; }
+  .paper-year { font-size: 14px; }
+  .paper-journal { font-size: 12px; }
+  .recent-paper h3 { font-size: 17px; }
+  .paper-authors { font-size: 13px; }
+  .recent-paper a { font-size: 12px; }
+  .resource-symbol { font-size: 11px; }
+  .resource-preview-grid strong { font-size: 14px; }
+  .resource-preview-grid small { font-size: 12px; }
+  .project-top { font-size: 10px; }
+  .project-card h3 { font-size: 19px; }
+  .project-card p { font-size: 16px; }
+  .cv-strip h2 { font-size: 22px; }
+  .cv-strip p { font-size: 14px; }
+  .footer-inner { font-size: 11px; }
+  .page-hero h1 { font-size: 39px; }
+  .page-hero > p:not(.eyebrow) { font-size: 16px; }
+  .page-meta { font-size: 12px; }
+  .search-box { min-height: 44px; }
+  .search-box input { font-size: 15px; }
+  .filter-button { font-size: 13px; }
+  .result-count { font-size: 12px; }
+  .pub-card { grid-template-columns: 58px minmax(0, 1fr); gap: 13px; padding: 23px 0; }
+  .pub-year { font-size: 15px; }
+  .pub-kind { font-size: 10px; }
+  .pub-main h2 { font-size: 17px; line-height: 1.6; }
+  .pub-authors { font-size: 13px; }
+  .pub-journal { font-size: 13px; }
+  .pub-summary { font-size: 14px; }
+  .pub-links a, .pub-footnote, .archive-note { font-size: 12px; }
+  .resource-intro h2 { font-size: 21px; }
+  .resource-intro p { font-size: 14px; }
+  .resource-category-heading h2 { font-size: 19px; }
+  .resource-category-heading p { font-size: 14px; }
+  .category-count { font-size: 11px; }
+  .resource-card-top { font-size: 11px; }
+  .resource-card h3 { font-size: 17px; }
+  .resource-card p { font-size: 14px; }
+  .resource-card .text-link { font-size: 13px; }
+  .resource-empty strong { font-size: 13px; }
+  .resource-empty p { font-size: 13px; }
+  .resource-maintenance h2 { font-size: 15px; }
+  .resource-maintenance p { font-size: 13px; }
+  .cv-header a { font-size: 13px; }
+  .cv-heading h1 { font-size: 30px; }
+  .cv-heading p { font-size: 13px; }
+}
