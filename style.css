@@ -301,3 +301,140 @@ html[data-site-lang="en"] [data-lang="zh"] { display: none !important; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+
+/* Readability and compact-layout refinement — November 2026 */
+:root { --max: 1040px; }
+body { font-size: 16px; }
+.main-nav { gap: 22px; font-size: 13px; }
+.hero { padding: 70px 0 58px; }
+.hero-grid { grid-template-columns: minmax(0, 1fr) 220px; gap: 70px; }
+.hero-portrait { width: 215px; }
+.eyebrow { font-size: 11px; }
+.hero-role { font-size: 18px; }
+.hero-intro { font-size: 16px; line-height: 1.9; }
+.hero-affiliation { font-size: 12px; }
+.button { font-size: 13px; }
+.profile-links a { font-size: 12px; }
+.portal-shortcuts > a { min-height: 82px; padding: 15px 16px; }
+.portal-shortcuts strong { font-size: 13px; }
+.portal-shortcuts small { font-size: 11px; }
+.content-section { padding: 52px 0; }
+.section-heading { grid-template-columns: 132px minmax(0, 1fr) auto; margin-bottom: 25px; }
+.section-heading h2 { font-size: 29px; }
+.section-heading p { font-size: 14px; }
+.section-more { font-size: 12px; }
+.research-grid, .research-highlight, .recent-publications, .resource-preview-grid, .project-grid, .cv-strip { margin-left: 148px; }
+.research-card { min-height: 180px; padding: 20px 21px; }
+.research-card h3 { font-size: 17px; }
+.research-card p { font-size: 14px; line-height: 1.75; }
+.tag-row span { font-size: 10px; }
+.research-highlight { gap: 24px; }
+.highlight-copy h3 { font-size: 20px; }
+.highlight-copy p:not(.eyebrow) { font-size: 14px; }
+.text-link { font-size: 12px; }
+.recent-paper { padding: 18px 0; }
+.paper-year { font-size: 14px; }
+.paper-journal { font-size: 11px; }
+.recent-paper h3 { font-size: 16px; }
+.paper-authors { font-size: 12px; }
+.recent-paper a { font-size: 11px; }
+.resource-preview-grid a { min-height: 132px; padding: 15px; }
+.resource-preview-grid strong { font-size: 13px; }
+.resource-preview-grid small { font-size: 11px; }
+.project-card { min-height: 155px; }
+.project-top { font-size: 10px; }
+.project-card h3 { font-size: 18px; }
+.project-card p { font-size: 14px; }
+.cv-strip h2 { font-size: 22px; }
+.cv-strip p { font-size: 13px; }
+.footer-inner { font-size: 11px; }
+.page-hero { padding: 55px 0 36px; }
+.page-hero h1 { font-size: clamp(38px, 5vw, 50px); }
+.page-hero > p:not(.eyebrow) { font-size: 15px; }
+.page-meta { font-size: 11px; }
+.publication-controls { gap: 14px; }
+.search-box input { font-size: 13px; }
+.filter-button { font-size: 12px; }
+.result-count { font-size: 11px; }
+.pub-card { grid-template-columns: 95px minmax(0, 1fr); gap: 20px; padding: 23px 0; }
+.pub-year { font-size: 16px; }
+.pub-kind { font-size: 10px; }
+.pub-main h2 { font-size: 18px; }
+.pub-authors { font-size: 13px; }
+.pub-journal { font-size: 12px; }
+.pub-summary { font-size: 13px; }
+.pub-links a { font-size: 11px; }
+.pub-footnote, .archive-note { font-size: 11px; }
+.resource-intro h2 { font-size: 22px; }
+.resource-intro p { font-size: 13px; }
+.resource-category-heading h2 { font-size: 19px; }
+.resource-category-heading p { font-size: 13px; }
+.category-count { font-size: 11px; }
+.resource-card { padding: 17px 18px; }
+.resource-card-top { font-size: 10px; }
+.resource-card h3 { font-size: 15px; }
+.resource-card p { font-size: 13px; }
+.resource-card .text-link { font-size: 12px; }
+.resource-empty strong { font-size: 12px; }
+.resource-empty p { font-size: 12px; }
+.resource-maintenance h2 { font-size: 14px; }
+.resource-maintenance p { font-size: 12px; }
+.cv-header a { font-size: 13px; }
+.cv-heading h1 { font-size: 31px; }
+.cv-heading p { font-size: 13px; }
+
+@media (max-width: 900px) {
+  .hero-grid { gap: 42px; }
+  .section-heading { grid-template-columns: 112px minmax(0, 1fr) auto; }
+  .research-grid, .research-highlight, .recent-publications, .resource-preview-grid, .project-grid, .cv-strip { margin-left: 126px; }
+}
+@media (max-width: 680px) {
+  body { font-size: 15px; }
+  .main-nav { gap: 11px; font-size: 11px; }
+  .hero { padding: 42px 0 38px; }
+  .hero-grid { grid-template-columns: minmax(0, 1fr) 105px; gap: 17px; }
+  .hero-portrait { width: 105px; }
+  .hero-role { font-size: 15px; }
+  .hero-intro { font-size: 14px; line-height: 1.8; }
+  .hero-affiliation { font-size: 11px; }
+  .button { font-size: 11px; }
+  .profile-links a { font-size: 11px; }
+  .portal-shortcuts > a { min-height: 76px; padding: 11px; }
+  .portal-shortcuts strong { font-size: 12px; }
+  .portal-shortcuts small { font-size: 10px; }
+  .content-section { padding: 37px 0; }
+  .section-heading h2 { font-size: 25px; }
+  .section-heading p { font-size: 13px; }
+  .research-grid, .research-highlight, .recent-publications, .resource-preview-grid, .project-grid, .cv-strip { margin-left: 0; }
+  .research-card h3 { font-size: 16px; }
+  .research-card p { font-size: 13px; }
+  .research-highlight { gap: 14px; }
+  .highlight-copy h3 { font-size: 18px; }
+  .highlight-copy p:not(.eyebrow) { font-size: 13px; }
+  .recent-paper h3 { font-size: 14px; }
+  .paper-authors { font-size: 11px; }
+  .paper-journal { font-size: 10px; }
+  .recent-paper a { font-size: 11px; }
+  .resource-preview-grid strong { font-size: 12px; }
+  .resource-preview-grid small { font-size: 10px; }
+  .project-card p { font-size: 13px; }
+  .cv-strip h2 { font-size: 20px; }
+  .cv-strip p { font-size: 12px; }
+  .page-hero { padding: 42px 0 30px; }
+  .page-hero h1 { font-size: 36px; }
+  .page-hero > p:not(.eyebrow) { font-size: 13px; }
+  .page-meta { font-size: 10px; }
+  .pub-main h2 { font-size: 15px; }
+  .pub-authors { font-size: 11px; }
+  .pub-journal { font-size: 11px; }
+  .pub-summary { font-size: 12px; }
+  .pub-links a, .pub-footnote, .archive-note { font-size: 11px; }
+  .resource-intro h2 { font-size: 19px; }
+  .resource-intro p, .resource-category-heading p { font-size: 12px; }
+  .resource-category-heading h2 { font-size: 17px; }
+  .resource-card h3 { font-size: 14px; }
+  .resource-card p { font-size: 12px; }
+  .resource-empty strong, .resource-empty p { font-size: 11px; }
+  .resource-maintenance p { font-size: 11px; }
+}
