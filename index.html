@@ -1,119 +1,194 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="zh-CN" data-site-lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuro-SC 实验室 - 首页</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- 使用相同的样式文件 style.css，确保中英文页面风格一致 -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <meta name="description" content="Zhi-Qiang Liu — neuroscience, computational biology, and research software.">
+  <meta property="og:title" content="Zhi-Qiang Liu | Personal Website">
+  <meta property="og:description" content="Research, publications, and selected software projects.">
+  <title>刘志强 · Zhi-Qiang Liu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Neuro-SC Lab</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
-                    <li class="nav-item"><a class="nav-link" href="publications.html">发表成果</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resources.html">资源共享</a></li>
-                    <li class="nav-item"><a class="nav-link" href="people.html">团队成员</a></li>
-                    <!-- 链接到单独的页面 -->
-                    <li class="nav-item"><a class="nav-link" href="joinus.html">加入我们</a></li>
-                    <!-- 切换到英文首页 -->
-                    <li class="nav-item ms-3"><a class="btn btn-outline-light btn-sm mt-1" href="en_index.html">English</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- 英雄区 (Hero Section) -->
-    <header class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Neuro-SC 实验室：神经科学单细胞组学研究室</h1>
-            <p class="lead mt-3">探索神经系统发育和疾病中的细胞异质性及调控网络。</p>
-            <div class="mt-4">
-                <!-- 已移除“加入我们的团队”按钮 -->
-                <a href="publications.html" class="btn btn-primary btn-lg">查看最新成果</a>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-        <!-- 研究方向 -->
-        <section class="mb-5">
-            <h2 class="section-title">主要研究方向</h2>
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <div class="p-3">
-                        <h4>🔬 单细胞技术</h4>
-                        <p class="text-muted">利用 scRNA-seq、scATAC-seq 和空间转录组学技术，绘制高分辨率神经细胞图谱。</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="p-3">
-                        <h4>🧠 发育与疾病</h4>
-                        <p class="text-muted">研究神经干细胞分化过程，以及阿尔茨海默病等神经退行性疾病的病理基础。</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="p-3">
-                        <h4>💻 生物信息学</h4>
-                        <p class="text-muted">开发基于 R (Tidyverse) 和 Python 的计算方法，用于整合多模态组学数据。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- 最新动态 -->
-        <section class="mb-5">
-            <h2 class="section-title">实验室动态</h2>
-            <div class="row">
-                <!-- 新闻卡片 1 -->
-                <div class="col-md-6 mb-3">
-                    <div class="card shadow-sm border-0 bg-white h-100">
-                        <div class="news-card-body card-body">
-                            <div class="news-content">
-                                <h5 class="card-title text-primary">🎉 [2025年11月15日] 恭喜！实验室获得国家自然科学基金项目资助！</h5>
-                                <p class="card-text small text-muted">该项目将聚焦于神经炎症中星形胶质细胞异质性的调控机制研究。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- 新闻卡片 2：可点击的论文新闻卡片，链接到 publications.html -->
-                <div class="col-md-6 mb-3">
-                    <a href="publications.html" class="text-decoration-none text-dark h-100 d-block">
-                        <div class="card shadow-sm border-0 bg-white h-100">
-                            <div class="news-card-body card-body">
-                                <div class="news-content">
-                                    <h5 class="card-title">📚 [2025年10月01日] 最新研究论文在 *Nature Neuroscience* 上发表</h5>
-                                    <p class="card-text small text-muted">我们的研究首次揭示了灵长类动物早期皮层发育过程中的表观遗传动态变化。</p>
-                                </div>
-                                <!-- 封面图位置 - 在大屏幕上会与文字左右分布 -->
-                                <img src="assets/news/NN_GraphicalAbstract.jpg" alt="Nature Neuroscience 论文封面" class="news-image d-none d-sm-block" onerror="this.onerror=null;this.src='https://placehold.co/120x150/1a237e/ffffff?text=COVER'">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- 可以在这里添加更多新闻卡片，它们会自动排成两列 -->
-            </div>
-        </section>
-
-
-
-
-
-
-
-
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="#top" aria-label="Home">ZL<span>.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about"><span data-lang="zh">关于</span><span data-lang="en">About</span></a>
+        <a href="#research"><span data-lang="zh">研究</span><span data-lang="en">Research</span></a>
+        <a href="#publications"><span data-lang="zh">论文</span><span data-lang="en">Publications</span></a>
+        <a href="#projects"><span data-lang="zh">项目</span><span data-lang="en">Projects</span></a>
+        <a class="nav-cv" href="cv.html">CV ↗</a>
+        <button class="language-toggle" id="language-toggle" type="button">EN</button>
+      </nav>
     </div>
+  </header>
 
-    <footer class="text-center mt-5"><div class="container"><p>© 2025 Neuro-SC Lab</p></div></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <main id="top">
+    <section class="hero section-shell" id="about">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span data-lang="zh">神经科学 · 计算生物学 · 科研软件</span><span data-lang="en">NEUROSCIENCE · COMPUTATIONAL BIOLOGY · RESEARCH SOFTWARE</span></p>
+          <h1><span data-lang="zh">刘志强</span><span data-lang="en">Zhi-Qiang Liu</span></h1>
+          <p class="hero-role"><span data-lang="zh">神经科学博士研究生</span><span data-lang="en">Ph.D. Student in Neuroscience</span></p>
+          <p class="hero-intro">
+            <span data-lang="zh">关注阿尔茨海默病及相关神经退行性疾病中的细胞类型特异性脆弱性，结合转录组学分析与分子机制研究，探索神经元 DNA 损伤应答、NHEJ 修复、MEIS2 相关功能及异常细胞周期重进入。</span>
+            <span data-lang="en">I study cell-type-specific vulnerability in Alzheimer's disease and related neurodegenerative disorders. My interests span transcriptomic analysis, neuronal DNA-damage responses and NHEJ repair, MEIS2-associated functions, and aberrant cell-cycle re-entry.</span>
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="cv.html"><span data-lang="zh">查看个人 CV</span><span data-lang="en">View CV</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="#publications"><span data-lang="zh">精选论文</span><span data-lang="en">Selected publications</span></a>
+          </div>
+          <p class="hero-meta"><span data-lang="zh">研究 · 分析 · 构建</span><span data-lang="en">Research · Analysis · Building</span></p>
+        </div>
+        <figure class="portrait">
+          <img src="assets/people/liuzq.jpeg" alt="Zhi-Qiang Liu">
+        </figure>
+      </div>
+    </section>
+
+    <div class="content-shell">
+      <section class="content-section" id="research">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <div>
+            <h2><span data-lang="zh">研究兴趣</span><span data-lang="en">Research interests</span></h2>
+            <p><span data-lang="zh">从细胞类型与分子机制理解神经退行性疾病。</span><span data-lang="en">Understanding neurodegeneration through cell identity and molecular mechanisms.</span></p>
+          </div>
+        </div>
+        <div class="research-list">
+          <article class="research-item">
+            <span class="item-number">01</span>
+            <div><h3><span data-lang="zh">神经元脆弱性与阿尔茨海默病</span><span data-lang="en">Neuronal vulnerability in Alzheimer's disease</span></h3>
+              <p><span data-lang="zh">解析不同神经元亚型对疾病病理的差异性响应。</span><span data-lang="en">Defining how distinct neuronal subtypes respond to disease-associated pathology.</span></p></div>
+          </article>
+          <article class="research-item">
+            <span class="item-number">02</span>
+            <div><h3><span data-lang="zh">MEIS2、DNA 损伤应答与 NHEJ</span><span data-lang="en">MEIS2, DNA-damage response &amp; NHEJ</span></h3>
+              <p><span data-lang="zh">探索 MEIS2 相关功能及其在神经元 DNA 损伤修复中的潜在作用。</span><span data-lang="en">Investigating MEIS2-associated functions and their potential role in neuronal DNA repair.</span></p></div>
+          </article>
+          <article class="research-item">
+            <span class="item-number">03</span>
+            <div><h3><span data-lang="zh">细胞周期重进入与神经元身份</span><span data-lang="en">Cell-cycle re-entry &amp; neuronal identity</span></h3>
+              <p><span data-lang="zh">研究成熟神经元异常细胞周期活动与细胞损伤之间的联系。</span><span data-lang="en">Studying the relationship between aberrant cell-cycle activity and neuronal injury.</span></p></div>
+          </article>
+          <article class="research-item">
+            <span class="item-number">04</span>
+            <div><h3><span data-lang="zh">转录组学与可变剪接</span><span data-lang="en">Transcriptomics &amp; alternative splicing</span></h3>
+              <p><span data-lang="zh">利用细胞类型分辨的转录组数据研究基因表达与剪接调控。</span><span data-lang="en">Using cell-type-resolved transcriptomic data to investigate gene expression and splicing regulation.</span></p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="publications">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <div>
+            <h2><span data-lang="zh">代表性论文</span><span data-lang="en">Selected publications</span></h2>
+            <p><span data-lang="zh">已发表的同行评审研究。</span><span data-lang="en">Peer-reviewed research contributions.</span></p>
+          </div>
+        </div>
+        <div class="publication-list">
+          <article class="publication">
+            <div class="publication-year">2025</div>
+            <div class="publication-body">
+              <h3>Spinal cord Tau pathology induces tactile deficits and cognitive impairment in Alzheimer's disease via dysregulation of CCK neurons</h3>
+              <p class="authors">Yang Zhou*, Wen-Lian Li*, <strong>Zhi-Qiang Liu*</strong>, et al.</p>
+              <p class="journal"><em>Nature Neuroscience</em> · 2025</p>
+              <div class="text-links">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/41254283/" target="_blank" rel="noopener noreferrer">PubMed ↗</a>
+                <a href="https://doi.org/10.1038/s41593-025-02137-4" target="_blank" rel="noopener noreferrer">DOI ↗</a>
+              </div>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="publication-year">2025</div>
+            <div class="publication-body">
+              <h3>Brain somatic mutations in Alzheimer's disease: linking genetic mosaicism to neurodegeneration</h3>
+              <p class="authors">Zu-Guang Li*, Juan Zhang*, <strong>Zhi-Qiang Liu*</strong>, et al.</p>
+              <p class="journal"><em>Molecular Neurodegeneration</em> · 20, 104 (2025)</p>
+              <div class="text-links">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/41068782/" target="_blank" rel="noopener noreferrer">PubMed ↗</a>
+                <a href="https://doi.org/10.1186/s13024-025-00895-0" target="_blank" rel="noopener noreferrer">DOI ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="publication-note"><span data-lang="zh">* 共同第一作者。</span><span data-lang="en">* Co-first authors.</span></p>
+      </section>
+
+      <section class="content-section" id="projects">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <div>
+            <h2><span data-lang="zh">精选项目</span><span data-lang="en">Selected projects</span></h2>
+            <p><span data-lang="zh">科研之外，也持续构建实用的软件与开发工具。</span><span data-lang="en">Alongside research, I build practical software and developer tools.</span></p>
+          </div>
+        </div>
+        <div class="project-grid">
+          <a class="project-card" href="https://github.com/liuzq1103/Helix" target="_blank" rel="noopener noreferrer">
+            <div class="project-top"><span>01 / RESEARCH SOFTWARE</span><span>↗</span></div>
+            <h3>Helix</h3>
+            <p><span data-lang="zh">面向 macOS 的科研数据分析与可视化工具。</span><span data-lang="en">Scientific data analysis and visualization for macOS.</span></p>
+            <span class="project-stack">macOS · R · Plotly</span>
+          </a>
+          <a class="project-card" href="https://github.com/liuzq1103/mihomoctl" target="_blank" rel="noopener noreferrer">
+            <div class="project-top"><span>02 / DEVELOPER TOOLS</span><span>↗</span></div>
+            <h3>mihomoctl</h3>
+            <p><span data-lang="zh">用于 Linux 的 Mihomo 管理命令行与终端控制台。</span><span data-lang="en">A Go CLI and terminal console for managing Mihomo on Linux.</span></p>
+            <span class="project-stack">Go · Linux · CLI / TUI</span>
+          </a>
+          <a class="project-card" href="https://github.com/liuzq1103/memory-monitor" target="_blank" rel="noopener noreferrer">
+            <div class="project-top"><span>03 / INFRASTRUCTURE</span><span>↗</span></div>
+            <h3>Memory Monitor</h3>
+            <p><span data-lang="zh">面向共享 Linux 分析服务器的轻量级内存监控与保护服务。</span><span data-lang="en">Lightweight memory monitoring and protection for shared Linux analysis servers.</span></p>
+            <span class="project-stack">Python · Linux · cgroup v2</span>
+          </a>
+          <a class="project-card" href="https://github.com/liuzq1103/magpie-page-token-widget" target="_blank" rel="noopener noreferrer">
+            <div class="project-top"><span>04 / AI ECOSYSTEM</span><span>↗</span></div>
+            <h3>Magpie Token Widget</h3>
+            <p><span data-lang="zh">将 AI 订阅额度与 Token 用量带到 iPhone 桌面。</span><span data-lang="en">An iPhone widget for AI subscription quotas and token usage.</span></p>
+            <span class="project-stack">TypeScript · Magpie · iOS</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="cv-strip" id="cv">
+        <div>
+          <span class="section-number">04</span>
+          <h2><span data-lang="zh">完整履历</span><span data-lang="en">Curriculum vitae</span></h2>
+          <p><span data-lang="zh">教育经历、研究经历及完整成果列表，请参阅 PDF 版个人 CV。</span><span data-lang="en">For education, research experience, and the complete record, see the PDF CV.</span></p>
+        </div>
+        <a class="button button-dark" href="cv.html"><span data-lang="zh">打开 CV</span><span data-lang="en">Open CV</span><span aria-hidden="true">↗</span></a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 Zhi-Qiang Liu</span>
+      <a href="https://github.com/liuzq1103" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.getElementById("language-toggle");
+      var requested = new URLSearchParams(window.location.search).get("lang");
+      function setLanguage(language) {
+        var lang = language === "en" ? "en" : "zh";
+        root.dataset.siteLang = lang;
+        root.lang = lang === "zh" ? "zh-CN" : "en";
+        toggle.textContent = lang === "zh" ? "EN" : "中文";
+        toggle.setAttribute("aria-label", lang === "zh" ? "Switch to English" : "切换到中文");
+      }
+      setLanguage(requested || "zh");
+      toggle.addEventListener("click", function () {
+        setLanguage(root.dataset.siteLang === "zh" ? "en" : "zh");
+      });
+    })();
+  </script>
 </body>
 </html>
