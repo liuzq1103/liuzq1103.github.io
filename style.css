@@ -995,3 +995,38 @@ body { font-size: 18px; line-height: 1.8; }
   .resource-card h3 { margin-top: 9px; font-size: 14px; }
   .resource-card p { font-size: 11px; }
 }
+
+
+/* Resource hub refinements — readable navigation, consistent homepage preview */
+.resource-nav a { min-height: 90px; padding: 16px 15px; gap: 11px; }
+.resource-nav-number { font-size: 11px; }
+.resource-nav strong { font-size: 14px; line-height: 1.4; }
+.resource-nav small { font-size: 11px; line-height: 1.5; }
+.resource-search input { font-size: 14px; }
+.resource-card-top span:first-child { font-size: 10px; }
+.resource-card h3 { font-size: 15px; line-height: 1.45; }
+.resource-card p { font-size: 12px; line-height: 1.75; }
+.resource-card .tag-row span { font-size: 10px; }
+.resource-card .text-link { font-size: 11px; }
+.resource-preview-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.resource-preview-grid a { min-height: 154px; padding: 16px; }
+.resource-preview-grid strong { font-size: 14px; line-height: 1.45; }
+.resource-preview-grid small { font-size: 11px; line-height: 1.6; }
+@media (max-width: 1050px) {
+  .resource-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .resource-nav strong { font-size: 13px; }
+  .resource-nav small { font-size: 10px; }
+  .resource-preview-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 680px) {
+  .resource-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .resource-nav a { min-height: 76px; padding: 12px; gap: 9px; }
+  .resource-nav strong { font-size: 13px; }
+  .resource-nav small { font-size: 10px; }
+  .resource-preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .resource-preview-grid a { min-height: 136px; padding: 13px; }
+  .resource-preview-grid strong { font-size: 13px; }
+  .resource-preview-grid small { font-size: 11px; }
+  .resource-card h3 { font-size: 15px; }
+  .resource-card p { font-size: 12px; }
+}
